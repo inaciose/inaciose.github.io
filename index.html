@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Zoofari - Zoo & Safari Park Website Template</title>
+    <title>RiaFari - Projecto de divulgação</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
+    <meta content="natureza, trilhos, animais, plantas" name="keywords" />
+    <meta content="Embarque numa viagem pela beleza da ria de aveiro" name="description" />
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon" />
@@ -17,6 +17,9 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- xsi added: another google web font sample-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link
@@ -38,6 +41,74 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <!-- xsi added: in document style sample -->
+    <style>
+      #bg-video {
+        min-width: 100%;
+        min-height: 100vh;
+        max-width: 100%;
+        max-height: 100vh;
+        object-fit: cover;
+        z-index: -1;
+      }
+
+      .video-overlay {
+        position: absolute;
+        background-color: rgba(31,39,43,0.75);
+        top: 120px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+      }
+
+      .main-banner .caption {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .main-banner .caption h6 {
+        margin-top: 0px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #fff;
+        letter-spacing: 1px;
+      }
+
+      .main-banner .caption h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: "Quicksand",sans-serif;
+        font-size: 36px;
+        text-transform: uppercase;
+        font-weight: 800;
+        color: #fff;
+        letter-spacing: 1px;
+      }
+
+      .main-banner .caption p {
+        color: #fff;
+        font-size: 14px;
+        max-width: 570px;
+      }
+
+      .main-button-red a {
+        font-size: 13px;
+        color: #fff;
+        background-color: #087219;
+        padding: 12px 30px;
+        display: inline-block;
+        border-radius: 22px;
+        font-weight: 500;
+        text-transform: uppercase;
+        transition: all .3s;
+      }  
+    </style>
+
   </head>
 
   <body>
@@ -139,7 +210,34 @@
     </nav>
     <!-- Navbar End -->
 
-    <!-- Header Start -->
+    <!--xsi added: embebed video -->
+    <div class="container-fluid bg-dark p-0 mb-5">
+      <div class="row g-0 flex-column-reverse flex-lg-row">
+        <div class="col-lg-12 p-0 wow fadeIn" data-wow-delay="0.1s">
+          <video autoplay="" muted="" loop="" id="bg-video">
+            <source src="video/course-video.mp4" type="video/mp4">
+          </video>
+          <!-- xsi added video overlay -->
+          <div class="video-overlay header-text main-banner">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="caption">
+                <h6>Bem vindos</h6>
+                <h2>Usufrua da natureza</h2>
+                <p>Descubra os prazeres que poderá ter se visitar <a href="/trilhos.html" title="Os nossos trilhos">os nossos trilhos</a>. <strong>Trajectos para vários gostos e todas as idades</strong>. <em>Alguns são ideais para familias e outros para seniores</em>.</p>
+                <div class="main-button-red">
+                    <div class="scroll-to-section"><a href="#contact">Marque uma visita guiada</a></div>
+                </div>
+            </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- old Header Start -->
     <div class="container-fluid bg-dark p-0 mb-5">
       <div class="row g-0 flex-column-reverse flex-lg-row">
         <div class="col-lg-6 p-0 wow fadeIn" data-wow-delay="0.1s">
