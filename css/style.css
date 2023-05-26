@@ -401,14 +401,14 @@
 }
 
 
-/*** Membership ***/
-.membership-item {
+/*** Tours ***/
+.tours-item {
     padding: 45px 30px;
-    color: #FFFFFF;
+    color: #ffffff;
     background: rgba(0, 0, 0, .7);
 }
 
-.membership-item img {
+.tours-item img {
     position: absolute;
     top: 0;
     left: 0;
@@ -418,11 +418,16 @@
     z-index: -1;
 }
 
-.membership-item .display-1 {
+.tours-item .display-1 {
     color: transparent;
     -webkit-text-stroke: 2px var(--primary);
 }
-
+.vertical-adjustment-1 {
+    margin: 0;
+    position: relative;
+    top: 100%;
+    transform: translateY(100%);
+}
 
 /*** Testimonial ***/
 .testimonial-carousel::before {
