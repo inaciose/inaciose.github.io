@@ -10,6 +10,9 @@ No container-xxl:
 - Alterei as imagens dos animais para imagens de tours
 - As imagens tem o mesmo tempo de fade-in
 - O botão "Special Pricing" for alterado para "Reserve a Sua Tour!" e adicionado o link para a página de reservas
+- Usei a classe "fa-users" para o ícone do número de pessoas
+!!POR FAZER!!
+- Alterei o texto descritivo para tours e adicionei o link para a página de apresentação de tours
 
 As alterações que fiz no ficheiro style.css foram:
 - Mudei o nome da classe "memberships-item" para "tours-item"
