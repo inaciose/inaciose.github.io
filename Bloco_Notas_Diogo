@@ -1,0 +1,19 @@
+Estou a usar isto como bloco de notas para introduzir posteriormente no relatório técnico (e também como meio de dar contexto ao CoPilot para que ele me ajude a escrever o relatório técnico)
+
+Vou começar por criar o tours.html que tem por base o memberships.html.
+Vou copiar o código do memberships.html para o tours.html e depois vou alterar o que for necessário.
+
+As alterações que fiz em tours.html desde memberships.html foram as seguintes.
+No container-xxl:
+- Alterei o título da página para "Tours"
+- Removi uma coluna do 
+- Alterei as imagens dos animais para imagens de tours
+- As imagens tem o mesmo tempo de fade-in
+- O botão "Special Pricing" for alterado para "Reserve a Sua Tour!" e adicionado o link para a página de reservas
+- Usei a classe "fa-users" para o ícone do número de pessoas
+!!POR FAZER!!
+- Alterei o texto descritivo para tours e adicionei o link para a página de apresentação de tours
+
+As alterações que fiz no ficheiro style.css foram:
+- Mudei o nome da classe "memberships-item" para "tours-item"
+- Adicionei a classe vertical-adjustment-1 para ajustar a posição do button "Reserve a Sua Tour!" para o posicionamento correto para todos os ecrãs
