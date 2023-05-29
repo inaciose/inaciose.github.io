@@ -598,6 +598,10 @@
 
 /*** xsi Aqui irei incluir novas regras ou regras sobrepostas ***/
 
+.text-green {
+    color: #a1eea1;
+}
+
 .header-bg.home-start {
     background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .1)), url(../img/ria-flamingos-lg.jpg) center center no-repeat;
     background-size: cover;
