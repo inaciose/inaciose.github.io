@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <meta charset="utf-8" />
-    <title>RiaFari - Projecto de divulgação</title>
+    <title>riaFari - Projecto de divulgação da natureza</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="natureza, trilhos, animais, plantas" name="keywords" />
     <meta content="Embarque numa viagem pela beleza da ria de aveiro" name="description" />
@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
 
-    <!-- xsi added: another google web font sample-->
+    <!-- xsi added: another google web font sample -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
@@ -34,13 +34,16 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet" />
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <!--<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />-->
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <!-- xsi extra css a remo ver e a juntar no futuro ao style.css-->
+    <link href="css/extra.css" rel="stylesheet" />
 
     <!-- xsi added: in document style sample -->
     <style>
@@ -53,17 +56,10 @@
         z-index: -1;
       }
 
-      .video-overlay {
-        position: absolute;
-        background-color: rgba(31,39,43,0.75);
-        top: 120px;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 100%;
-      }
-
       .main-banner .caption {
+        padding: 30px;
+        border-radius: 20px;
+        background-color: rgba(7, 9, 10, 0.75);
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -122,7 +118,7 @@
         style="width: 3rem; height: 3rem"
         role="status"
       >
-        <span class="sr-only">Loading...</span>
+        <span class="sr-only">Carregando...</span>
       </div>
     </div>
     <!-- Spinner End -->
@@ -171,7 +167,7 @@
     >
       <a href="index.html" class="navbar-brand p-0">
         <img class="img-fluid me-3" src="img/icon/icon-10.png" alt="Icon" />
-        <h1 class="m-0 text-primary">Zoofari</h1>
+        <h1 class="m-0 text-primary">riaFari</h1>
       </a>
       <button
         type="button"
@@ -215,21 +211,22 @@
       <div class="row g-0 flex-column-reverse flex-lg-row">
         <div class="col-lg-12 p-0 wow fadeIn" data-wow-delay="0.1s">
           <video autoplay="" muted="" loop="" id="bg-video">
-            <source src="video/course-video.mp4" type="video/mp4">
+            <source src="video/ria-video.mp4" type="video/mp4">
           </video>
-          <!-- xsi added video overlay -->
+          <!-- xsi added video overlay, inclui tags semanticas strong e em, e atributo title-->
+          <!-- faz uso de css cujas classes hierarquicas sem implicar direct childs-->
           <div class="video-overlay header-text main-banner">
             <div class="container">
               <div class="row">
                 <div class="col-lg-12">
-                  <div class="caption">
-                <h6>Bem vindos</h6>
-                <h2>Usufrua da natureza</h2>
-                <p>Descubra os prazeres que poderá ter se visitar <a href="/trilhos.html" title="Os nossos trilhos">os nossos trilhos</a>. <strong>Trajectos para vários gostos e todas as idades</strong>. <em>Alguns são ideais para familias e outros para seniores</em>.</p>
-                <div class="main-button-red">
-                    <div class="scroll-to-section"><a href="#contact">Marque uma visita guiada</a></div>
-                </div>
-            </div>
+                  <div class="caption rounded-6">
+                    <h6>Bem vindos</h6>
+                    <h2>Usufrua da natureza</h2>
+                    <p>Descubra os prazeres que poderá ter se visitar <a href="/trilhos.html" title="Os nossos trilhos">os nossos trilhos</a>. <strong>Trajectos para vários gostos e todas as idades</strong>. <em>Alguns são ideais para familias e outros para seniores</em>.</p>
+                    <div class="main-button-red">
+                      <div class="scroll-to-section"><a href="#contact">Marque uma visita guiada</a></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -245,26 +242,56 @@
             class="header-bg h-100 d-flex flex-column justify-content-center p-5"
           >
             <h1 class="display-4 text-light mb-5">
-              Enjoy Wonderful Day With Your Family
+              Tenha um dia inesquecivel com a sua familia 
             </h1>
             <div class="d-flex align-items-center pt-4 animated slideInDown">
               <a href="" class="btn btn-primary py-sm-3 px-3 px-sm-5 me-5"
-                >Read More</a
+                >Saber mais</a
               >
               <button
                 type="button"
                 class="btn-play"
                 data-bs-toggle="modal"
-                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
+                data-src="https://www.youtube.com/embed/baE_lprao3A"
                 data-bs-target="#videoModal"
               >
                 <span></span>
               </button>
-              <h6 class="text-white m-0 ms-4 d-none d-sm-block">Watch Video</h6>
+              <h6 class="text-white m-0 ms-4 d-none d-sm-block">Ver Video</h6>
             </div>
           </div>
         </div>
         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+          <!-- replace owl-carousel by bootstrap5 carousel -->
+          <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+            <!-- Carrossel de imagens -->
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="1000">
+                <img src="img/carousel-1.jpg" alt="Imagem 1" class="d-block" style="width:100%">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="img/carousel-2.jpg" alt="Imagem 2" class="d-block" style="width:100%">
+              </div>
+              <div class="carousel-item" data-bs-interval="1000">
+                <img src="img/carousel-1.jpg" alt="Imagem 3" class="d-block" style="width:100%">
+              </div>
+            </div>
+            <!-- Controlos para a Esquerda e para a Direita -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          
+          <!--
           <div class="owl-carousel header-carousel">
             <div class="owl-carousel-item">
               <img class="img-fluid" src="img/carousel-1.jpg" alt="" />
@@ -276,6 +303,7 @@
               <img class="img-fluid" src="img/carousel-3.jpg" alt="" />
             </div>
           </div>
+        -->
         </div>
       </div>
     </div>
@@ -318,7 +346,32 @@
     </div>
     <!-- Video Modal End -->
 
+    <!-- xsi: add block with hidden column on cellphones -->
+    <div class="container bg-dark p-0 mb-5">
+      <div class="row">
+        <div class="col-md-4 d-none d-sm-block">
+          <img class="img-fluid mb-3" src="img/icon/icon-2.png" alt="Icon" />
+          <h5 class="mb-3">Car Parking</h5>
+          <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+            sed diam stet diam sed stet.</span>
+        </div>
+        <div class="col-md-4 col-xs-10">
+          <img class="img-fluid mb-3" src="img/icon/icon-3.png" alt="Icon" />
+          <h5 class="mb-3">Animal Photos</h5>
+          <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+            sed diam stet diam sed stet.</span>
+        </div>
+        <div class="col-md-4 d-none d-sm-block">
+          <img class="img-fluid mb-3" src="img/icon/icon-5.png" alt="Icon" />
+          <h5 class="mb-3">Food & Beverages</h5>
+          <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+            sed diam stet diam sed stet.</span>
+        </div>
+      </div>
+    </div>
+
     <!-- About Start -->
+    <!--
     <div class="container-xxl py-5">
       <div class="container">
         <div class="row g-5">
@@ -359,6 +412,7 @@
         </div>
       </div>
     </div>
+    -->
     <!-- About End -->
 
     <!-- Facts Start -->
