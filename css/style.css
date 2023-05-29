@@ -598,6 +598,10 @@
 
 /*** xsi Aqui irei incluir novas regras ou regras sobrepostas ***/
 
+.navbar.sticky-top a h2 {
+    font-size: 2.5rem;
+}
+
 .text-green {
     color: #a1eea1;
 }
