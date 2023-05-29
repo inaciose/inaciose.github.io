@@ -596,4 +596,24 @@
 
 /*** novas regras ou regras sobrepostas ***/
 
-/*** Aqui irei incluir novas regras ou regras sobrepostas ***/
+/*** xsi Aqui irei incluir novas regras ou regras sobrepostas ***/
+
+.header-bg.home-start {
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .1)), url(../img/ria-flamingos-lg.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.header-bg.visita-guiada {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/Moliceiro-Aveiro-Memorias-Ria-min.png) center center no-repeat;
+    background-size: cover;
+}
+
+.visiting-hours {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/ria-por-do-sol.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.footer {
+    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .7)), url(../img/ria-flamingos.jpg) center center no-repeat;
+    background-size: cover;
+}
