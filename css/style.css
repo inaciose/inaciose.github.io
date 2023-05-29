@@ -603,6 +603,16 @@
     background-size: cover;
 }
 
+.facts {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/ria-aveiro-aeria.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+#demo2 .carousel-indicators {
+    bottom: -30px;
+}
+
+
 .header-bg.visita-guiada {
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/Moliceiro-Aveiro-Memorias-Ria-min.png) center center no-repeat;
     background-size: cover;
@@ -613,7 +623,23 @@
     background-size: cover;
 }
 
+
+
 .footer {
     background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .7)), url(../img/ria-flamingos.jpg) center center no-repeat;
     background-size: cover;
+}
+
+.footer h5 {
+    color: #2EB872 !important;
+}
+
+.footer .btn-primary {
+    background-color: #4dc387;
+    border-color: #43bf80;
+}
+
+.footer .btn-primary:hover {
+    background-color: #125332;
+    border-color: #125332;
 }
