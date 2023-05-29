@@ -1,0 +1,4 @@
+29/5/2023
+Criação da página catalogo.html.
+Adição de Imagens.
+Alteração de conteúdo de texto da pageheader e o fundo do pageheader(alterado no ficheiro css)
