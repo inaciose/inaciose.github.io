@@ -1,0 +1,72 @@
+#whole{
+    background-color:white;
+    
+    display: inline-block;
+}
+#detalhes{
+    margin-right: 5%;
+    margin-left: 5%;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+}
+#one{
+    text-align: center;
+    font-size: 25px;
+}
+#two{
+    text-align: center;
+    font-size: 25px;
+}
+#three{
+    text-align: center;
+    font-size: 25px;
+}
+#four{text-align: center;
+    font-size: 25px;
+}
+
+#table{
+    width: 100%; 
+    height: 40%;
+    margin-right: 20%;
+    text-align:center;
+    font-size: larger;
+    
+}
+th{
+    color:#2EB872;
+}
+td{
+    color:#2EB872;
+    font-weight: bold;
+}
+#image{
+    text-align: center;
+}
+#first{
+
+    background-image:url(img/grupoarii.jpg);
+    background-position:middle
+
+}
+#last{
+    background-image:url(img/grupoarii.jpg);
+    background-position:middle;
+}
+#legenda{
+    text-align: center;
+}
+#image1{
+    width: 150px;
+}
+#image2{
+    width: 100px;
+}
+#image3{
+    width: 100px;
+}
+#map{
+    width: 365px;
+}
