@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <meta charset="utf-8" />
-    <title>RiaFari - Projecto de divulgação</title>
+    <title>riaFari - Projecto de divulgação da natureza</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="natureza, trilhos, animais, plantas" name="keywords" />
     <meta content="Embarque numa viagem pela beleza da ria de aveiro" name="description" />
@@ -14,11 +14,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&amp;family=Quicksand:wght@600;700&amp;display=swap"
       rel="stylesheet"
     />
 
-    <!-- xsi added: another google web font sample-->
+    <!-- xsi added: another google web font sample -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
@@ -34,13 +34,15 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet" />
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <!-- xsi extra css a remo ver e a juntar no futuro ao style.css-->
+    <link href="css/extra.css" rel="stylesheet" />
 
     <!-- xsi added: in document style sample -->
     <style>
@@ -53,17 +55,10 @@
         z-index: -1;
       }
 
-      .video-overlay {
-        position: absolute;
-        background-color: rgba(31,39,43,0.75);
-        top: 120px;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 100%;
-      }
-
       .main-banner .caption {
+        padding: 30px;
+        border-radius: 20px;
+        background-color: rgba(7, 9, 10, 0.75);
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -107,6 +102,13 @@
         text-transform: uppercase;
         transition: all .3s;
       }  
+
+      @media screen and (max-width: 480px) {
+        .main-banner .caption { 
+          margin: 0 20px;
+        }
+      }
+
     </style>
 
   </head>
@@ -122,7 +124,7 @@
         style="width: 3rem; height: 3rem"
         role="status"
       >
-        <span class="sr-only">Loading...</span>
+        <span class="sr-only">Carregando...</span>
       </div>
     </div>
     <!-- Spinner End -->
@@ -133,29 +135,29 @@
         <div class="col-lg-7 px-5 text-start">
           <div class="h-100 d-inline-flex align-items-center py-3 me-4">
             <small class="fa fa-map-marker-alt text-primary me-2"></small>
-            <small>123 Street, New York, USA</small>
+            <small>Canal do moliço, Aveiro, Portugal</small>
           </div>
           <div class="h-100 d-inline-flex align-items-center py-3">
             <small class="far fa-clock text-primary me-2"></small>
-            <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
+            <small>Seg - Dom : 09.00 - 18.00</small>
           </div>
         </div>
         <div class="col-lg-5 px-5 text-end">
           <div class="h-100 d-inline-flex align-items-center py-3 me-4">
             <small class="fa fa-phone-alt text-primary me-2"></small>
-            <small>+012 345 6789</small>
+            <small>+351 234 234 234</small>
           </div>
           <div class="h-100 d-inline-flex align-items-center">
-            <a class="btn btn-sm-square bg-white text-primary me-1" href=""
+            <a class="btn btn-sm-square bg-white text-primary me-1" target="_blank" href="https://facebook.com/"
               ><i class="fab fa-facebook-f"></i
             ></a>
-            <a class="btn btn-sm-square bg-white text-primary me-1" href=""
+            <a class="btn btn-sm-square bg-white text-primary me-1" target="_blank" href="https://twitter.com/"
               ><i class="fab fa-twitter"></i
             ></a>
-            <a class="btn btn-sm-square bg-white text-primary me-1" href=""
+            <a class="btn btn-sm-square bg-white text-primary me-1" target="_blank" href="https://linkedin.com/"
               ><i class="fab fa-linkedin-in"></i
             ></a>
-            <a class="btn btn-sm-square bg-white text-primary me-0" href=""
+            <a class="btn btn-sm-square bg-white text-primary me-0" target="_blank" href="https://instagram.com/"
               ><i class="fab fa-instagram"></i
             ></a>
           </div>
@@ -170,8 +172,8 @@
       data-wow-delay="0.1s"
     >
       <a href="index.html" class="navbar-brand p-0">
-        <img class="img-fluid me-3" src="img/icon/icon-10.png" alt="Icon" />
-        <h1 class="m-0 text-primary">Zoofari</h1>
+        <img class="img-fluid me-3" src="img/icon/icon-logo.png" alt="Icon" />
+        <h1 class="m-0 text-primary">riaFari</h1>
       </a>
       <button
         type="button"
@@ -184,97 +186,134 @@
       <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
         <div class="navbar-nav ms-auto">
           <a href="index.html" class="nav-item nav-link active">Home</a>
-          <a href="about.html" class="nav-item nav-link">About</a>
-          <a href="service.html" class="nav-item nav-link">Services</a>
+          <a href="about.html" class="nav-item nav-link">Catálogo</a>
+
           <div class="nav-item dropdown">
-            <a
-              href="#"
+            <a 
+              href="trilhos.html"
               class="nav-link dropdown-toggle"
               data-bs-toggle="dropdown"
-              >Pages</a
+              >Trilhos</a
             >
             <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-              <a href="animal.html" class="dropdown-item">Our Animals</a>
-              <a href="membership.html" class="dropdown-item">Membership</a>
-              <a href="visiting.html" class="dropdown-item">Visiting Hours</a>
-              <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-              <a href="404.html" class="dropdown-item">404 Page</a>
+              <a href="trilho1.html" class="dropdown-item">Trilho 1</a>
+              <a href="trilho2.html" class="dropdown-item">Trilho 2</a>
+              <a href="trilho3.html" class="dropdown-item">Trilho 3</a>
             </div>
           </div>
-          <a href="contact.html" class="nav-item nav-link">Contact</a>
+
+          <div class="nav-item dropdown">
+            <a 
+              href="especies.html"
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              >Especies</a
+            >
+            <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+              <a href="especie1.html" class="dropdown-item">Onça pintada</a>
+              <a href="especie2.html" class="dropdown-item">Ariranha</a>
+              <a href="especie3.html" class="dropdown-item">Galo-da-serra</a>
+              <a href="especie4.html" class="dropdown-item">Tucano</a>
+              <a href="especie5.html" class="dropdown-item">Vitória-régia</a>
+              <a href="especie6.html" class="dropdown-item">Papa-mosca</a>
+            </div>
+          </div>
+          <a href="visitas-guiadas.html" class="nav-item nav-link">Visitas guiadas</a>
+          <a href="galeria.html" class="nav-item nav-link">Galeria de imagens</a>
+          <a href="sobre.html" class="nav-item nav-link">Sobre</a>
+
+          <a href="contactos.html" class="nav-item nav-link" style="margin-right: 20px;">Contactos</a>
         </div>
         <a href="" class="btn btn-primary"
-          >Buy Ticket<i class="fa fa-arrow-right ms-3"></i
+          >Marcações<i class="fa fa-arrow-right ms-3"></i
         ></a>
       </div>
     </nav>
     <!-- Navbar End -->
 
     <!--xsi added: embebed video -->
-    <div class="container-fluid bg-dark p-0 mb-5">
+    <div class="container-fluid bg-dark p-0">
       <div class="row g-0 flex-column-reverse flex-lg-row">
         <div class="col-lg-12 p-0 wow fadeIn" data-wow-delay="0.1s">
           <video autoplay="" muted="" loop="" id="bg-video">
-            <source src="video/course-video.mp4" type="video/mp4">
+            <source src="video/ria-video.mp4" type="video/mp4">
           </video>
-          <!-- xsi added video overlay -->
+          <!-- xsi added video overlay, inclui tags semanticas strong e em, e atributo title-->
+          <!-- faz uso de css cujas classes hierarquicas sem implicar direct childs-->
           <div class="video-overlay header-text main-banner">
             <div class="container">
               <div class="row">
                 <div class="col-lg-12">
                   <div class="caption">
-                <h6>Bem vindos</h6>
-                <h2>Usufrua da natureza</h2>
-                <p>Descubra os prazeres que poderá ter se visitar <a href="/trilhos.html" title="Os nossos trilhos">os nossos trilhos</a>. <strong>Trajectos para vários gostos e todas as idades</strong>. <em>Alguns são ideais para familias e outros para seniores</em>.</p>
-                <div class="main-button-red">
-                    <div class="scroll-to-section"><a href="#contact">Marque uma visita guiada</a></div>
-                </div>
-            </div>
+                    <h6>Bem vindos</h6>
+                    <h2>Usufrua da natureza</h2>
+                    <p>Descubra os prazeres que poderá ter se visitar <a href="/trilhos.html" title="Os nossos trilhos">os nossos trilhos</a>. <strong>Trajectos para vários gostos e todas as idades</strong>. <em>Alguns são ideais para familias e outros para seniores</em>.</p>
+                    <div class="main-button-red">
+                      <div class="scroll-to-section"><a href="#contact">Marque uma visita guiada</a></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- old Header Start -->
+    <!-- revised Header Start -->
     <div class="container-fluid bg-dark p-0 mb-5">
       <div class="row g-0 flex-column-reverse flex-lg-row">
         <div class="col-lg-6 p-0 wow fadeIn" data-wow-delay="0.1s">
           <div
-            class="header-bg h-100 d-flex flex-column justify-content-center p-5"
+            class="header-bg home-start h-100 d-flex flex-column justify-content-center p-5"
           >
-            <h1 class="display-4 text-light mb-5">
-              Enjoy Wonderful Day With Your Family
-            </h1>
+            <h2 class="display-4 text-light mb-5">
+              Tenha um dia inesquecivel com a sua familia na natureza
+            </h2>
             <div class="d-flex align-items-center pt-4 animated slideInDown">
               <a href="" class="btn btn-primary py-sm-3 px-3 px-sm-5 me-5"
-                >Read More</a
+                >Saber mais</a
               >
               <button
                 type="button"
                 class="btn-play"
                 data-bs-toggle="modal"
-                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
                 data-bs-target="#videoModal"
               >
                 <span></span>
               </button>
-              <h6 class="text-white m-0 ms-4 d-none d-sm-block">Watch Video</h6>
+              <h6 class="text-white m-0 ms-4 d-none d-sm-block">Ver Video</h6>
             </div>
           </div>
         </div>
         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-          <div class="owl-carousel header-carousel">
-            <div class="owl-carousel-item">
-              <img class="img-fluid" src="img/carousel-1.jpg" alt="" />
+          <!-- replace owl-carousel by bootstrap5 carousel -->
+          <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
             </div>
-            <div class="owl-carousel-item">
-              <img class="img-fluid" src="img/carousel-2.jpg" alt="" />
+            <!-- Carrossel de imagens -->
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="img/carousel-1.jpg" alt="Imagem 1" class="d-block" style="width:100%">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="img/carousel-2.jpg" alt="Imagem 2" class="d-block" style="width:100%">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="img/carousel-1.jpg" alt="Imagem 3" class="d-block" style="width:100%">
+              </div>
             </div>
-            <div class="owl-carousel-item">
-              <img class="img-fluid" src="img/carousel-3.jpg" alt="" />
-            </div>
+            <!-- Controlos para a Esquerda e para a Direita -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-next-icon"></span>
+            </button>
           </div>
         </div>
       </div>
@@ -305,10 +344,9 @@
             <div class="ratio ratio-16x9">
               <iframe
                 class="embed-responsive-item"
-                src=""
+                src="https://www.youtube.com/embed/Uq9PGtpYYRQ"
                 id="video"
                 allowfullscreen
-                allowscriptaccess="always"
                 allow="autoplay"
               ></iframe>
             </div>
@@ -318,549 +356,256 @@
     </div>
     <!-- Video Modal End -->
 
-    <!-- About Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-            <p><span class="text-primary me-2">#</span>Welcome To Zoofari</p>
-            <h1 class="display-5 mb-4">
-              Why You Should Visit
-              <span class="text-primary">Zoofari</span> Park!
-            </h1>
-            <p class="mb-4">
-              Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No
-              stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo
-              nonumy clita sit at, sed sit sanctus dolor eos.
-            </p>
-            <h5 class="mb-3">
-              <i class="far fa-check-circle text-primary me-3"></i>Free Car
-              Parking
-            </h5>
-            <h5 class="mb-3">
-              <i class="far fa-check-circle text-primary me-3"></i>Natural
-              Environment
-            </h5>
-            <h5 class="mb-3">
-              <i class="far fa-check-circle text-primary me-3"></i>Professional
-              Guide & Security
-            </h5>
-            <h5 class="mb-3">
-              <i class="far fa-check-circle text-primary me-3"></i>World Best
-              Animals
-            </h5>
-            <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a>
-          </div>
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="img-border">
-              <img class="img-fluid" src="img/about.jpg" alt="" />
-            </div>
-          </div>
+    <!-- xsi: add block with hidden column on cellphones -->
+    <div class="container p-0 mb-5">
+      <div class="row">
+        <div class="col-md-4 d-none d-sm-block text-center">
+          <img class="img-fluid mb-3" src="img/icon/icon-2.png" alt="Icon" />
+          <h5 class="mb-3">Car Parking</h5>
+          <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+            sed diam stet diam sed stet.</span>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <img class="img-fluid mb-3" src="img/icon/icon-3.png" alt="Icon" />
+          <h5 class="mb-3">Animal Photos</h5>
+          <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+            sed diam stet diam sed stet.</span>
+        </div>
+        <div class="col-md-4 d-none d-sm-block text-center">
+          <img class="img-fluid mb-3" src="img/icon/icon-5.png" alt="Icon" />
+          <h5 class="mb-3">Food & Beverages</h5>
+          <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+            sed diam stet diam sed stet.</span>
         </div>
       </div>
     </div>
-    <!-- About End -->
+
 
     <!-- Facts Start -->
     <div
-      class="container-xxl bg-primary facts my-5 py-5 wow fadeInUp"
+      class="container-fluid bg-primary facts my-5 py-5"
       data-wow-delay="0.1s"
     >
       <div class="container py-5">
         <div class="row g-4">
           <div
-            class="col-md-6 col-lg-3 text-center wow fadeIn"
+            class="col-md-6 col-lg-4 text-center wow fadeIn"
             data-wow-delay="0.1s"
           >
             <i class="fa fa-paw fa-3x text-primary mb-3"></i>
-            <h1 class="text-white mb-2" data-toggle="counter-up">12345</h1>
-            <p class="text-white mb-0">Total Animal</p>
+            <h3 class="text-white mb-2" data-toggle="counter-up">12345</h3>
+            <p class="text-white mb-0">Especies de animais</p>
           </div>
           <div
-            class="col-md-6 col-lg-3 text-center wow fadeIn"
+            class="col-md-6 col-lg-4 text-center wow fadeIn"
             data-wow-delay="0.3s"
           >
             <i class="fa fa-users fa-3x text-primary mb-3"></i>
-            <h1 class="text-white mb-2" data-toggle="counter-up">12345</h1>
-            <p class="text-white mb-0">Daily Vigitors</p>
+            <h3 class="text-white mb-2" data-toggle="counter-up">98887</h3>
+            <p class="text-white mb-0">Visitantes</p>
           </div>
           <div
-            class="col-md-6 col-lg-3 text-center wow fadeIn"
-            data-wow-delay="0.5s"
-          >
-            <i class="fa fa-certificate fa-3x text-primary mb-3"></i>
-            <h1 class="text-white mb-2" data-toggle="counter-up">12345</h1>
-            <p class="text-white mb-0">Total Membership</p>
-          </div>
-          <div
-            class="col-md-6 col-lg-3 text-center wow fadeIn"
+            class="col-md-6 col-lg-4 text-center wow fadeIn"
             data-wow-delay="0.7s"
           >
             <i class="fa fa-shield-alt fa-3x text-primary mb-3"></i>
-            <h1 class="text-white mb-2" data-toggle="counter-up">12345</h1>
-            <p class="text-white mb-0">Save Wild Life</p>
+            <h3 class="text-white mb-2" data-toggle="counter-up">586</h3>
+            <p class="text-white mb-0">Animais salvos</p>
           </div>
         </div>
       </div>
     </div>
     <!-- Facts End -->
 
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-          <div class="col-lg-6">
-            <p><span class="text-primary me-2">#</span>Our Services</p>
-            <h1 class="display-5 mb-0">
-              Special Services For
-              <span class="text-primary">Zoofari</span> Visitors
-            </h1>
-          </div>
-          <div class="col-lg-6">
-            <div
-              class="bg-primary h-100 d-flex align-items-center py-4 px-4 px-sm-5"
-            >
-              <i class="fa fa-3x fa-mobile-alt text-white"></i>
-              <div class="ms-4">
-                <p class="text-white mb-0">Call for more info</p>
-                <h2 class="text-white mb-0">+012 345 6789</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row gy-5 gx-4">
-          <div
-            class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
-            data-wow-delay="0.1s"
-          >
-            <img class="img-fluid mb-3" src="img/icon/icon-2.png" alt="Icon" />
-            <h5 class="mb-3">Car Parking</h5>
-            <span
-              >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet.</span
-            >
-          </div>
-          <div
-            class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
-            data-wow-delay="0.3s"
-          >
-            <img class="img-fluid mb-3" src="img/icon/icon-3.png" alt="Icon" />
-            <h5 class="mb-3">Animal Photos</h5>
-            <span
-              >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet.</span
-            >
-          </div>
-          <div
-            class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
-            data-wow-delay="0.5s"
-          >
-            <img class="img-fluid mb-3" src="img/icon/icon-4.png" alt="Icon" />
-            <h5 class="mb-3">Guide Services</h5>
-            <span
-              >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet.</span
-            >
-          </div>
-          <div
-            class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
-            data-wow-delay="0.7s"
-          >
-            <img class="img-fluid mb-3" src="img/icon/icon-5.png" alt="Icon" />
-            <h5 class="mb-3">Food & Beverages</h5>
-            <span
-              >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet.</span
-            >
-          </div>
-          <div
-            class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
-            data-wow-delay="0.1s"
-          >
-            <img class="img-fluid mb-3" src="img/icon/icon-6.png" alt="Icon" />
-            <h5 class="mb-3">Zoo Shopping</h5>
-            <span
-              >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet.</span
-            >
-          </div>
-          <div
-            class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
-            data-wow-delay="0.3s"
-          >
-            <img class="img-fluid mb-3" src="img/icon/icon-7.png" alt="Icon" />
-            <h5 class="mb-3">Free Hi Speed Wi-Fi</h5>
-            <span
-              >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet.</span
-            >
-          </div>
-          <div
-            class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
-            data-wow-delay="0.5s"
-          >
-            <img class="img-fluid mb-3" src="img/icon/icon-8.png" alt="Icon" />
-            <h5 class="mb-3">Play Ground</h5>
-            <span
-              >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet.</span
-            >
-          </div>
-          <div
-            class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
-            data-wow-delay="0.7s"
-          >
-            <img class="img-fluid mb-3" src="img/icon/icon-9.png" alt="Icon" />
-            <h5 class="mb-3">Rest House</h5>
-            <span
-              >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet.</span
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Service End -->
-
-    <!-- Animal Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div
-          class="row g-5 mb-5 align-items-end wow fadeInUp"
-          data-wow-delay="0.1s"
-        >
-          <div class="col-lg-6">
-            <p><span class="text-primary me-2">#</span>Our Animals</p>
-            <h1 class="display-5 mb-0">
-              Let`s See Our <span class="text-primary">Zoofari</span> Awsome
-              Animals
-            </h1>
-          </div>
-          <div class="col-lg-6 text-lg-end">
-            <a class="btn btn-primary py-3 px-5" href=""
-              >Explore More Animals</a
-            >
-          </div>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="row g-4">
-              <div class="col-12">
-                <a
-                  class="animal-item"
-                  href="img/animal-md-1.jpg"
-                  data-lightbox="animal"
-                >
-                  <div class="position-relative">
-                    <img class="img-fluid" src="img/animal-md-1.jpg" alt="" />
-                    <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-12">
-                <a
-                  class="animal-item"
-                  href="img/animal-lg-1.jpg"
-                  data-lightbox="animal"
-                >
-                  <div class="position-relative">
-                    <img class="img-fluid" src="img/animal-lg-1.jpg" alt="" />
-                    <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="row g-4">
-              <div class="col-12">
-                <a
-                  class="animal-item"
-                  href="img/animal-lg-2.jpg"
-                  data-lightbox="animal"
-                >
-                  <div class="position-relative">
-                    <img class="img-fluid" src="img/animal-lg-2.jpg" alt="" />
-                    <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-12">
-                <a
-                  class="animal-item"
-                  href="img/animal-md-2.jpg"
-                  data-lightbox="animal"
-                >
-                  <div class="position-relative">
-                    <img class="img-fluid" src="img/animal-md-2.jpg" alt="" />
-                    <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="row g-4">
-              <div class="col-12">
-                <a
-                  class="animal-item"
-                  href="img/animal-md-3.jpg"
-                  data-lightbox="animal"
-                >
-                  <div class="position-relative">
-                    <img class="img-fluid" src="img/animal-md-3.jpg" alt="" />
-                    <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-12">
-                <a
-                  class="animal-item"
-                  href="img/animal-lg-3.jpg"
-                  data-lightbox="animal"
-                >
-                  <div class="position-relative">
-                    <img class="img-fluid" src="img/animal-lg-3.jpg" alt="" />
-                    <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Animal End -->
-
-    <!-- Visiting Hours Start -->
-    <div
-      class="container-xxl bg-primary visiting-hours my-5 py-5 wow fadeInUp"
-      data-wow-delay="0.1s"
-    >
-      <div class="container py-5">
-        <div class="row g-5">
-          <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
-            <h1 class="display-6 text-white mb-5">Visiting Hours</h1>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <span>Monday</span>
-                <span>9:00AM - 6:00PM</span>
-              </li>
-              <li class="list-group-item">
-                <span>Tuesday</span>
-                <span>9:00AM - 6:00PM</span>
-              </li>
-              <li class="list-group-item">
-                <span>Wednesday</span>
-                <span>9:00AM - 6:00PM</span>
-              </li>
-              <li class="list-group-item">
-                <span>Thursday</span>
-                <span>9:00AM - 6:00PM</span>
-              </li>
-              <li class="list-group-item">
-                <span>Friday</span>
-                <span>9:00AM - 6:00PM</span>
-              </li>
-              <li class="list-group-item">
-                <span>Saturday</span>
-                <span>9:00AM - 6:00PM</span>
-              </li>
-              <li class="list-group-item">
-                <span>Sunday</span>
-                <span>Closed</span>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-6 text-light wow fadeIn" data-wow-delay="0.5s">
-            <h1 class="display-6 text-white mb-5">Contact Info</h1>
-            <table class="table">
-              <tbody>
-                <tr>
-                  <td>Office</td>
-                  <td>123 Street, New York, USA</td>
-                </tr>
-                <tr>
-                  <td>Zoo</td>
-                  <td>123 Street, New York, USA</td>
-                </tr>
-                <tr>
-                  <td>Ticket</td>
-                  <td>
-                    <p class="mb-2">+012 345 6789</p>
-                    <p class="mb-0">ticket@example.com</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Support</td>
-                  <td>
-                    <p class="mb-2">+012 345 6789</p>
-                    <p class="mb-0">support@example.com</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Visiting Hours End -->
-
-    <!-- Membership Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div
-          class="row g-5 mb-5 align-items-end wow fadeInUp"
-          data-wow-delay="0.1s"
-        >
-          <div class="col-lg-6">
-            <p><span class="text-primary me-2">#</span>Membership</p>
-            <h1 class="display-5 mb-0">
-              You Can Be A Proud Member Of
-              <span class="text-primary">Zoofari</span>
-            </h1>
-          </div>
-          <div class="col-lg-6 text-lg-end">
-            <a class="btn btn-primary py-3 px-5" href="">Special Pricing</a>
-          </div>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="membership-item position-relative">
-              <img class="img-fluid" src="img/animal-lg-1.jpg" alt="" />
-              <h1 class="display-1">01</h1>
-              <h4 class="text-white mb-3">Popular</h4>
-              <h3 class="text-primary mb-4">$99.00</h3>
-              <p><i class="fa fa-check text-primary me-3"></i>10% discount</p>
-              <p>
-                <i class="fa fa-check text-primary me-3"></i>2 adult and 2 child
-              </p>
-              <p>
-                <i class="fa fa-check text-primary me-3"></i>Free animal
-                exhibition
-              </p>
-              <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="membership-item position-relative">
-              <img class="img-fluid" src="img/animal-lg-2.jpg" alt="" />
-              <h1 class="display-1">02</h1>
-              <h4 class="text-white mb-3">Standard</h4>
-              <h3 class="text-primary mb-4">$149.00</h3>
-              <p><i class="fa fa-check text-primary me-3"></i>15% discount</p>
-              <p>
-                <i class="fa fa-check text-primary me-3"></i>4 adult and 4 child
-              </p>
-              <p>
-                <i class="fa fa-check text-primary me-3"></i>Free animal
-                exhibition
-              </p>
-              <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="membership-item position-relative">
-              <img class="img-fluid" src="img/animal-lg-3.jpg" alt="" />
-              <h1 class="display-1">03</h1>
-              <h4 class="text-white mb-3">Premium</h4>
-              <h3 class="text-primary mb-4">$199.00</h3>
-              <p><i class="fa fa-check text-primary me-3"></i>20% discount</p>
-              <p>
-                <i class="fa fa-check text-primary me-3"></i>6 adult and 6 child
-              </p>
-              <p>
-                <i class="fa fa-check text-primary me-3"></i>Free animal
-                exhibition
-              </p>
-              <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Membership End -->
-
     <!-- Testimonial Start -->
+    <!-- replace owl-carousel by bootstrap5 carousel -->
     <div class="container-xxl py-5">
       <div class="container">
-        <h1
-          class="display-5 text-center mb-5 wow fadeInUp"
+        <h2
+          class="display-5 text-center mb-5 wow"
           data-wow-delay="0.1s"
         >
-          Our Clients Say!
-        </h1>
-        <div
-          class="owl-carousel testimonial-carousel wow fadeInUp"
-          data-wow-delay="0.1s"
-        >
-          <div class="testimonial-item text-center">
-            <img
-              class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-              src="img/testimonial-1.jpg"
-              style="width: 100px; height: 100px"
-            />
-            <div class="testimonial-text rounded text-center p-4">
-              <p>
-                Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                clita erat magna elitr erat sit sit erat at rebum justo sea
-                clita.
-              </p>
-              <h5 class="mb-1">Patient Name</h5>
-              <span class="fst-italic">Profession</span>
-            </div>
+          O que dizem os nossos clientes!
+        </h2>
+        <div id="demo2" class="carousel slide" data-bs-ride="carousel" >
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo2" data-bs-slide-to="2"></button>
           </div>
-          <div class="testimonial-item text-center">
-            <img
-              class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-              src="img/testimonial-2.jpg"
-              style="width: 100px; height: 100px"
-            />
-            <div class="testimonial-text rounded text-center p-4">
-              <p>
-                Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                clita erat magna elitr erat sit sit erat at rebum justo sea
-                clita.
-              </p>
-              <h5 class="mb-1">Patient Name</h5>
-              <span class="fst-italic">Profession</span>
+
+          <div class="carousel-inner">
+            <div class="testimonial-item text-center carousel-item active" data-bs-interval="20000">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img
+                      class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
+                      src="img/testimonial-1.jpg"
+                      style="width: 100px; height: 100px" alt="foto1"
+                    />
+                    <div class="testimonial-text rounded text-center p-4">
+                      <p>
+                        Clita clita tempor justo dolor ipsum amet kasd amet duo justo
+                        duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
+                        clita erat magna elitr erat sit sit erat at rebum justo sea
+                        clita.
+                      </p>
+                      <h5 class="mb-1">Patient Name</h5>
+                      <span class="fst-italic">Profession</span>
+                    </div>
+
+                  </div>
+                  <div class="col-md-4">
+                    <img
+                      class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
+                      src="img/testimonial-2.jpg"
+                      style="width: 100px; height: 100px" alt="foto2"
+                    />
+                    <div class="testimonial-text rounded text-center p-4">
+                      <p>
+                        Clita clita tempor justo dolor ipsum amet kasd amet duo justo
+                        duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
+                        clita erat magna elitr erat sit sit erat at rebum justo sea
+                        clita.
+                      </p>
+                      <h5 class="mb-1">Patient Name</h5>
+                      <span class="fst-italic">Profession</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <img
+                      class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
+                      src="img/testimonial-3.jpg"
+                      style="width: 100px; height: 100px" alt="foto3"
+                    />
+                    <div class="testimonial-text rounded text-center p-4">
+                      <p>
+                        Clita clita tempor justo dolor ipsum amet kasd amet duo justo
+                        duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
+                        clita erat magna elitr erat sit sit erat at rebum justo sea
+                        clita.
+                      </p>
+                      <h5 class="mb-1">Patient Name</h5>
+                      <span class="fst-italic">Profession</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="testimonial-item text-center">
-            <img
-              class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-              src="img/testimonial-3.jpg"
-              style="width: 100px; height: 100px"
-            />
-            <div class="testimonial-text rounded text-center p-4">
-              <p>
-                Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                clita erat magna elitr erat sit sit erat at rebum justo sea
-                clita.
-              </p>
-              <h5 class="mb-1">Patient Name</h5>
-              <span class="fst-italic">Profession</span>
+            <div class="testimonial-item text-center carousel-item" data-bs-interval="20000">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img
+                      class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
+                      src="img/testimonial-4.jpg"
+                      style="width: 100px; height: 100px" alt="foto4"
+                    />
+                    <div class="testimonial-text rounded text-center p-4">
+                      <p>
+                        Clita clita tempor justo dolor ipsum amet kasd amet duo justo
+                        duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
+                        clita erat magna elitr erat sit sit erat at rebum justo sea
+                        clita.
+                      </p>
+                      <h5 class="mb-1">Patient Name</h5>
+                      <span class="fst-italic">Profession</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <img
+                      class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
+                      src="img/testimonial-5.jpg"
+                      style="width: 100px; height: 100px" alt="foto5"
+                    />
+                    <div class="testimonial-text rounded text-center p-4">
+                      <p>
+                        Clita clita tempor justo dolor ipsum amet kasd amet duo justo
+                        duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
+                        clita erat magna elitr erat sit sit erat at rebum justo sea
+                        clita.
+                      </p>
+                      <h5 class="mb-1">Patient Name</h5>
+                      <span class="fst-italic">Profession</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <img
+                      class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
+                      src="img/testimonial-6.jpg"
+                      style="width: 100px; height: 100px" alt="foto6"
+                    />
+                    <div class="testimonial-text rounded text-center p-4">
+                      <p>
+                        Clita clita tempor justo dolor ipsum amet kasd amet duo justo
+                        duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
+                        clita erat magna elitr erat sit sit erat at rebum justo sea
+                        clita.
+                      </p>
+                      <h5 class="mb-1">Patient Name</h5>
+                      <span class="fst-italic">Profession</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-item text-center carousel-item" data-bs-interval="20000">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img
+                      class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
+                      src="img/testimonial-7.jpg"
+                      style="width: 100px; height: 100px" alt="foto7"
+                    />
+                    <div class="testimonial-text rounded text-center p-4">
+                      <p>
+                        Clita clita tempor justo dolor ipsum amet kasd amet duo justo
+                        duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
+                        clita erat magna elitr erat sit sit erat at rebum justo sea
+                        clita.
+                      </p>
+                      <h5 class="mb-1">Patient Name</h5>
+                      <span class="fst-italic">Profession</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <img
+                      class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
+                      src="img/testimonial-8.jpg"
+                      style="width: 100px; height: 100px" alt="foto8"
+                    />
+                    <div class="testimonial-text rounded text-center p-4">
+                      <p>
+                        Clita clita tempor justo dolor ipsum amet kasd amet duo justo
+                        duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
+                        clita erat magna elitr erat sit sit erat at rebum justo sea
+                        clita.
+                      </p>
+                      <h5 class="mb-1">Patient Name</h5>
+                      <span class="fst-italic">Profession</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <img
+                      class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
+                      src="img/testimonial-9.jpg"
+                      style="width: 100px; height: 100px" alt="foto9"
+                    />
+                    <div class="testimonial-text rounded text-center p-4">
+                      <p>
+                        Clita clita tempor justo dolor ipsum amet kasd amet duo justo
+                        duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
+                        clita erat magna elitr erat sit sit erat at rebum justo sea
+                        clita.
+                      </p>
+                      <h5 class="mb-1">Patient Name</h5>
+                      <span class="fst-italic">Profession</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -876,61 +621,61 @@
       <div class="container py-5">
         <div class="row g-5">
           <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Address</h5>
+            <h5 class="text-light mb-4">Moradas e contactos</h5>
             <p class="mb-2">
-              <i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA
+              <i class="fa fa-map-marker-alt me-3"></i>Canal do moliço, Aveiro, Portugal
             </p>
             <p class="mb-2">
-              <i class="fa fa-phone-alt me-3"></i>+012 345 67890
+              <i class="fa fa-phone-alt me-3"></i>+351 234 234 234
             </p>
             <p class="mb-2">
-              <i class="fa fa-envelope me-3"></i>info@example.com
+              <i class="fa fa-envelope me-3"></i>info@riafary.com
             </p>
-            <div class="d-flex pt-2">
-              <a class="btn btn-outline-light btn-social" href=""
+            <div class="d-flex pt-2 social">
+              <a class="btn btn-outline-light btn-social" target="_blank" href="https://twitter.com/"
                 ><i class="fab fa-twitter"></i
               ></a>
-              <a class="btn btn-outline-light btn-social" href=""
+              <a class="btn btn-outline-light btn-social" target="_blank" href="https://facebook.com/"
                 ><i class="fab fa-facebook-f"></i
               ></a>
-              <a class="btn btn-outline-light btn-social" href=""
+              <a class="btn btn-outline-light btn-social" target="_blank" href="https://youtube.com/"
                 ><i class="fab fa-youtube"></i
               ></a>
-              <a class="btn btn-outline-light btn-social" href=""
+              <a class="btn btn-outline-light btn-social" target="_blank" href="https://linkedin.com/"
                 ><i class="fab fa-linkedin-in"></i
               ></a>
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Quick Links</h5>
-            <a class="btn btn-link" href="">About Us</a>
-            <a class="btn btn-link" href="">Contact Us</a>
-            <a class="btn btn-link" href="">Our Services</a>
-            <a class="btn btn-link" href="">Terms & Condition</a>
-            <a class="btn btn-link" href="">Support</a>
+            <h5 class="text-light mb-4">Caracteristicas</h5>
+            <a class="btn btn-link" href="">Primeiros socorros</a>
+            <a class="btn btn-link" href="">Loja de recordações</a>
+            <a class="btn btn-link" href="">Estacionamento</a>
+            <a class="btn btn-link" href="">Cafetaria</a>
+            <a class="btn btn-link" href="">Berçario</a>
+          
           </div>
           <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Popular Links</h5>
-            <a class="btn btn-link" href="">About Us</a>
-            <a class="btn btn-link" href="">Contact Us</a>
-            <a class="btn btn-link" href="">Our Services</a>
-            <a class="btn btn-link" href="">Terms & Condition</a>
-            <a class="btn btn-link" href="">Support</a>
+            <h5 class="text-light mb-4">Informações</h5>
+            <a class="btn btn-link" href="">Termos e condições</a>
+            <a class="btn btn-link" href="">Sobre o riaFary</a>
+            <a class="btn btn-link" href="">Assistência</a>
+            <a class="btn btn-link" href="">Contactos</a>
           </div>
           <div class="col-lg-3 col-md-6">
             <h5 class="text-light mb-4">Newsletter</h5>
-            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+            <p>Subscreva a nossa newsletter para estar sempre informado.</p>
             <div class="position-relative mx-auto" style="max-width: 400px">
               <input
                 class="form-control border-0 w-100 py-3 ps-4 pe-5"
                 type="text"
-                placeholder="Your email"
+                placeholder="Insira o e-mail"
               />
               <button
                 type="button"
                 class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
               >
-                SignUp
+                Subscrever
               </button>
             </div>
           </div>
@@ -940,17 +685,10 @@
         <div class="copyright">
           <div class="row">
             <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy; <a class="border-bottom" href="#">Your Site Name</a>, All
-              Right Reserved.
+              &copy; <a class="border-bottom" href="#">riaFari</a>, todos os direitos reservados.
             </div>
             <div class="col-md-6 text-center text-md-end">
-              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-              Designed By
-              <a class="border-bottom" href="https://htmlcodex.com"
-                >HTML Codex</a
-              >
-              <br />Distributed By:
-              <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+              Trabalho de <a class="border-bottom" href="https://www.ua.pt/pt/uc/15064" target="_blank">Programação web</a>
             </div>
           </div>
         </div>
@@ -970,7 +708,6 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- Template Javascript -->
