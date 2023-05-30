@@ -596,15 +596,50 @@
 
 /*** novas regras ou regras sobrepostas ***/
 
-/*** xsi Aqui irei incluir novas regras ou regras sobrepostas ***/
+/* sergio globais */
+
+.text-green {
+    color: #a1eea1;
+}
+
+H5 {
+    color:crimson;
+}
+/* sergio header */
 
 .navbar.sticky-top a h2 {
     font-size: 2.5rem;
 }
 
-.text-green {
-    color: #a1eea1;
+/* sergio: navegação */
+
+.navbar .navbar-nav .nav-link {
+    padding: 25px 15px;
+    margin: 0;
 }
+
+.navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link.active {
+    background-color: darkgreen;
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    background-color: rgb(73, 136, 73);
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link.active:hover {
+    background-color: rgb(2, 34, 2);
+    color: white;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    color: #1e2125;
+    background-color: rgb(167, 223, 167);
+}
+
+
+/* sergio: home page */
 
 .header-bg.home-start {
     background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .1)), url(../img/ria-flamingos-lg.jpg) center center no-repeat;
@@ -621,6 +656,8 @@
 }
 
 
+/* sergio: visita guiada */
+
 .header-bg.visita-guiada {
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/Moliceiro-Aveiro-Memorias-Ria-min.png) center center no-repeat;
     background-size: cover;
@@ -631,7 +668,13 @@
     background-size: cover;
 }
 
+/* sergio: testemunhos */ 
 
+.carousel-indicators [data-bs-target] {
+    background-color: #287e4b;
+}
+
+/* sergio: footer */
 
 .footer {
     background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .7)), url(../img/ria-flamingos.jpg) center center no-repeat;
