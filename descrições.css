@@ -11,19 +11,8 @@ h2{
     text-align: center;
     font-size: 40px;
 }
-#one{
+#texto{
     text-align: center;
-    font-size: 25px;
-}
-#two{
-    text-align: center;
-    font-size: 25px;
-}
-#three{
-    text-align: center;
-    font-size: 25px;
-}
-#four{text-align: center;
     font-size: 25px;
 }
 
@@ -42,31 +31,24 @@ td{
     color:#2EB872;
     font-weight: bold;
 }
+#table_icones{
+    width: 33%;
+}
 #image{
     text-align: center;
 }
-#first{
 
-    background-image:url(img/whole.onça1.jpg);
-    background-position:middle
-
-}
-#last{
-    background-image:url(img/whole.onça1.jpg);
-    background-position:middle;
-}
 #legenda{
     text-align: center;
 }
-#image1{
+#imagem_icones_pequenos{
     width: 100px;
 }
-#image2{
-    width: 100px;
+#imagem_icones_grandes{
+    width: 150px;
 }
-#image3{
-    width: 100px;
-}
+
 #map{
     width: 365px;
 }
+
