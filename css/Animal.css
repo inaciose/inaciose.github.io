@@ -1,54 +1,61 @@
-#whole{
-    background-color:white;
-    
+.whole {
+    background-color: white;
     display: inline-block;
 }
-#detalhes{
+
+.detalhes {
     margin-right: 5%;
     margin-left: 5%;
 }
-h2{
+
+h2 {
     text-align: center;
     font-size: 40px;
 }
-#texto{
+
+.texto {
     text-align: center;
     font-size: 25px;
 }
 
-#table{
-    width: 100%; 
+.tabela {
+    width: 100%;
     height: 40%;
     margin-right: 20%;
-    text-align:center;
+    text-align: center;
     font-size: larger;
-    
+
 }
-th{
-    color:#2EB872;
+
+th {
+    color: #2EB872;
 }
-td{
-    color:#2EB872;
+
+td {
+    color: #2EB872;
     font-weight: bold;
 }
-#table_icones{
+
+.table_icones {
     width: 33%;
 }
-#image{
+
+.image {
     text-align: center;
 }
 
-#legenda{
+.legenda {
     text-align: center;
 }
-#imagem_icones_pequenos{
+
+.imagem_icones_pequenos {
     width: 100px;
 }
-#imagem_icones_grandes{
+
+.imagem_icones_grandes {
     width: 150px;
 }
 
-#map{
+.map {
     width: 365px;
 }
-

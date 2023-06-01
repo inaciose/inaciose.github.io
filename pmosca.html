@@ -1,272 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Zoofari - Zoo & Safari Park Website Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-    rel="stylesheet">
-    <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <title>Papa-Mosca</title>
-        <meta name="Descripition" content="Características">
-        <link rel="stylesheet" type="text/css" href="descrições.css">
-        
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+<head>
+  <meta charset="utf-8" />
+  <title>Papa-Mosca riaFari</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&ampfamily=Quicksand:wght@600;700&ampdisplay=swap"
-      rel="stylesheet"
-    />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Icon Font Stylesheet -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&ampfamily=Quicksand:wght@600;700&ampdisplay=swap"
+    rel="stylesheet" />
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
-    <style>
-      #first_end{
-        background-image:url(img/p.mosca.jpg);
-        background-position:middle;
-      }
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-      #map_pmosca{
-        width: 700px;
-      }
-      .footer {
-        background:linear-gradient(rgba(62, 61, 61, 0.151), rgba(0, 0, 0, .7)),url(../img/p.mosca.jpg);
-        background-size: cover;
-      }
-    </style>
-  </head>
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
-  <body>
-    <!-- Spinner Start -->
-    <div
-      id="spinner"
-      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-    >
-      <div
-        class="spinner-border text-primary"
-        style="width: 3rem; height: 3rem"
-        role="status"
-      >
-        <span class="sr-only">Loading...</span>
-      </div>
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+
+  <!-- Custom Animal Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="css/Animal.css">
+
+  <style>
+    #first_end {
+      background-image: url(img/p.mosca.jpg);
+      background-position: middle;
+    }
+
+    #map_pmosca {
+      width: 700px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
+      <span class="sr-only">Loading...</span>
     </div>
-    <!-- Spinner End -->
+  </div>
+  <!-- Spinner End -->
 
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
-      <div class="row gx-0 d-none d-lg-flex">
-        <div class="col-lg-7 px-5 text-start">
-          <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-            <small class="fa fa-map-marker-alt text-primary me-2"></small>
-            <small>Canal do moliço, Aveiro, Portugal</small>
-          </div>
-          <div class="h-100 d-inline-flex align-items-center py-3">
-            <small class="far fa-clock text-primary me-2"></small>
-            <small>Seg - Dom : 09.00 - 18.00</small>
-          </div>
+  <!-- Topbar Start -->
+  <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+    <div class="row gx-0 d-none d-lg-flex">
+      <div class="col-lg-7 px-5 text-start">
+        <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+          <small class="fa fa-map-marker-alt text-primary me-2"></small>
+          <small>Canal do moliço, Aveiro, Portugal</small>
         </div>
-        <div class="col-lg-5 px-5 text-end">
-          <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-            <small class="fa fa-phone-alt text-primary me-2"></small>
-            <small>+351 234 234 234</small>
-          </div>
-          <div class="h-100 d-inline-flex align-items-center">
-            <a class="btn btn-sm-square bg-white text-primary me-1" target="_blank" href="https://facebook.com/"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a class="btn btn-sm-square bg-white text-primary me-1" target="_blank" href="https://twitter.com/"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a class="btn btn-sm-square bg-white text-primary me-1" target="_blank" href="https://linkedin.com/"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a class="btn btn-sm-square bg-white text-primary me-0" target="_blank" href="https://instagram.com/"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </div>
+        <div class="h-100 d-inline-flex align-items-center py-3">
+          <small class="far fa-clock text-primary me-2"></small>
+          <small>Seg - Dom : 09.00 - 18.00</small>
+        </div>
+      </div>
+      <div class="col-lg-5 px-5 text-end">
+        <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+          <small class="fa fa-phone-alt text-primary me-2"></small>
+          <small>+351 234 234 234</small>
+        </div>
+        <div class="h-100 d-inline-flex align-items-center">
+          <a class="btn btn-sm-square bg-white text-primary me-1" target="_blank" href="https://facebook.com/"><i
+              class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-sm-square bg-white text-primary me-1" target="_blank" href="https://twitter.com/"><i
+              class="fab fa-twitter"></i></a>
+          <a class="btn btn-sm-square bg-white text-primary me-1" target="_blank" href="https://linkedin.com/"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a class="btn btn-sm-square bg-white text-primary me-0" target="_blank" href="https://instagram.com/"><i
+              class="fab fa-instagram"></i></a>
         </div>
       </div>
     </div>
-    <!-- Topbar End -->
+  </div>
+  <!-- Topbar End -->
 
-    <!-- Navbar Start -->
-    <nav
-      class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <a href="index.html" class="navbar-brand p-0">
-        <img class="img-fluid me-3" src="img/icon/icon-logo.png" alt="Icon" />
-        <h2 class="m-0 text-primary">riaFari</h2>
-      </a>
-      <button
-        type="button"
-        class="navbar-toggler"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
-        <div class="navbar-nav ms-auto">
-          <a href="index.html" class="nav-item nav-link active">Home</a>
-          <a href="about.html" class="nav-item nav-link">Catálogo</a>
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn"
+    data-wow-delay="0.1s">
+    <a href="index.html" class="navbar-brand p-0">
+      <img class="img-fluid me-3" src="img/icon/icon-logo.png" alt="Icon" />
+      <h2 class="m-0 text-primary">riaFari</h2>
+    </a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
+      <div class="navbar-nav ms-auto">
+        <a href="index.html" class="nav-item nav-link active">Home</a>
+        <a href="about.html" class="nav-item nav-link">Catálogo</a>
 
-          <div class="nav-item dropdown">
-            <a 
-              href="trilhos.html"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >Trilhos</a
-            >
-            <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-              <a href="trilho1.html" class="dropdown-item">Trilho 1</a>
-              <a href="trilho2.html" class="dropdown-item">Trilho 2</a>
-              <a href="trilho3.html" class="dropdown-item">Trilho 3</a>
-            </div>
-          </div>
-
-          <div class="nav-item dropdown">
-            <a 
-              href="animais.html"
-              class="nav-link dropdown-toggle"
-              data-hover="dropdown"
-              >Especies</a
-            >
-            <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-              <a href="onca.html" class="dropdown-item">Onça pintada</a>
-              <a href="ariranha.html" class="dropdown-item">Ariranha</a>
-              <a href="galo.html" class="dropdown-item">Galo-da-serra</a>
-              <a href="tucano.html" class="dropdown-item">Tucano</a>
-              <a href="v.régia.html" class="dropdown-item">Vitória-régia</a>
-              <a href="pmosca.html" class="dropdown-item">Papa-mosca</a>
-            </div>
-          </div>
-          <a href="visitas-guiadas.html" class="nav-item nav-link">Visitas guiadas</a>
-          <a href="galeria.html" class="nav-item nav-link">Galeria de imagens</a>
-          <a href="sobre.html" class="nav-item nav-link">Sobre</a>
-
-          <a href="contactos.html" class="nav-item nav-link" style="margin-right: 20px;">Contactos</a>
-        </div>
-        <a href="" class="btn btn-primary"
-          >Marcações<i class="fa fa-arrow-right ms-3"></i
-        ></a>
-      </div>
-    </nav>
-    <!-- Navbar End -->
-
-    <!-- Page Header Start -->
-    <div
-      class="container-fluid header-bg py-5 mb-5 wow fadeIn" id="first_end"
-      data-wow-delay="0.1s"
-    >
-      <div class="container py-5">
-        <h1 class="display-4 text-white mb-3 animated slideInDown">Papa-Mosca</h1>
-        <nav aria-label="breadcrumb animated slideInDown">
-          <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item">
-              <a class="text-white" href="#">Home</a>
-            </li>
-            <li class="breadcrumb-item">
-              <a class="text-white" href="#">Pages</a>
-            </li>
-            <li class="breadcrumb-item text-primary active" aria-current="page">
-              About Us
-            </li>
-          </ol>
-        </nav>
-      </div>
-    </div>
-    <!-- Page Header End -->
-
-    <!-- Detalhes do Animal -->
-    <div id="detalhes">
-      <div class="row">
-          <div id="whole" class="col-md-6">
-            <h2> Características </h2>
-      
-          <p id="texto"> A Papa-mosca é <strong>uma das poucas espécies de plantas </strong>, capaz de realizar movimento.</p>
-          <p id="texto"> Pode ter no máximo 10 centímetros de altura e é composta por folhas muitos particulares, que contêm um pecíolo e uma armadilha,que serve como "dentes".</p>
-          <p id="texto"> Curiosamente,a Papa-Mosca no inverno entra num período de dormência, e se nessa altura fôr colocada num ambiente mais fresco, a sua longevidade pode ser maior.</p>
-          
-          <table class="table-table-borderless" id="table">
-            <tr >
-              <th> Atividade </th>
-              <th> Dieta </th>
-              <th> Família </th>
-            </tr>
-            <tr>
-              <td id="table_icones">
-                <figure>
-                  <img src="img/sol.png" alt="" id="imagem_icones_grandes"/>
-                </figure> 
-              </td>
-              <td id="table_icones">
-                <figure>
-                  <img src="img/carne.png" alt="" id="imagem_icones_pequenos" />
-                </figure>
-              </td>
-              <td id="table_icones">
-                <figure>
-                  <img src="img/flora.png" alt="" id="imagem_icones_pequenos" />
-                </figure>
-              </td>
-              <tr>
-                <td> Diurna </td>
-                <td> Carnívora</td>
-                <td> Pantae </td>
-              </tr>      
-            </table>
-          </div>
-          
-          <div class="col-md-6">
-            <h2> Onde podemos localizar esta planta?</h2>
-            <figure>
-              <div id="image">
-                <p></p>
-              <img src="img/mapa.pmosca.jpg" alt=""  id="map_pmosca"/>
-            </div>
-          </figure>
-            <p id="legenda"> Localização atual da espécie em estudo </p>
-            <p id="texto"> A Papa-Mosca é uma planta nativa do sudeste dos Estados Unidos, nomeadamente dos estados da Carolina do Norte e do Sul.</p>
-
+        <div class="nav-item dropdown">
+          <a href="trilhos.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Trilhos</a>
+          <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+            <a href="trilho1.html" class="dropdown-item">Trilho 1</a>
+            <a href="trilho2.html" class="dropdown-item">Trilho 2</a>
+            <a href="trilho3.html" class="dropdown-item">Trilho 3</a>
           </div>
         </div>
-      
-    </div>
-    <!-- Detalhes End -->
 
-    
-    
-    <!-- Footer Start -->
+        <div class="nav-item dropdown">
+          <a href="animais.html" class="nav-link dropdown-toggle" data-hover="dropdown">Especies</a>
+          <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+            <a href="onca.html" class="dropdown-item">Onça pintada</a>
+            <a href="ariranha.html" class="dropdown-item">Ariranha</a>
+            <a href="galo.html" class="dropdown-item">Galo-da-serra</a>
+            <a href="tucano.html" class="dropdown-item">Tucano</a>
+            <a href="v.régia.html" class="dropdown-item">Vitória-régia</a>
+            <a href="pmosca.html" class="dropdown-item">Papa-mosca</a>
+          </div>
+        </div>
+        <a href="visitas-guiadas.html" class="nav-item nav-link">Visitas guiadas</a>
+        <a href="galeria.html" class="nav-item nav-link">Galeria de imagens</a>
+        <a href="sobre.html" class="nav-item nav-link">Sobre</a>
+
+        <a href="contactos.html" class="nav-item nav-link" style="margin-right: 20px;">Contactos</a>
+      </div>
+      <a href="" class="btn btn-primary">Marcações<i class="fa fa-arrow-right ms-3"></i></a>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- Page Header Start -->
+  <div class="container-fluid header-bg py-5 mb-5 wow fadeIn first_end" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <h1 class="display-4 text-white mb-3 animated slideInDown">Papa-Mosca</h1>
+      <nav aria-label="breadcrumb animated slideInDown">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item">
+            <a class="text-white" href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a class="text-white" href="#">Pages</a>
+          </li>
+          <li class="breadcrumb-item text-primary active" aria-current="page">
+            About Us
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <!-- Page Header End -->
+
+  <!-- Detalhes do Animal -->
+  <div class="detalhes">
+    <div class="row">
+      <div class="col-md-6 whole">
+        <h2> Características </h2>
+
+        <p class="texto"> A Papa-mosca é <strong>uma das poucas espécies de plantas </strong>, capaz de realizar
+          movimento.</p>
+        <p class="texto"> Pode ter no máximo 10 centímetros de altura e é composta por folhas muitos particulares, que
+          contêm um pecíolo e uma armadilha,que serve como "dentes".</p>
+        <p class="texto"> Curiosamente,a Papa-Mosca no inverno entra num período de dormência, e se nessa altura fôr
+          colocada num ambiente mais fresco, a sua longevidade pode ser maior.</p>
+
+        <table class="table-table-borderless table">
+          <tr>
+            <th> Atividade </th>
+            <th> Dieta </th>
+            <th> Família </th>
+          </tr>
+          <tr>
+            <td class="table_icones">
+              <figure>
+                <img src="img/sol.png" alt="" class="imagem_icones_grandes" />
+              </figure>
+            </td>
+            <td class="table_icones">
+              <figure>
+                <img src="img/carne.png" alt="" class="imagem_icones_pequenos" />
+              </figure>
+            </td>
+            <td class="table_icones">
+              <figure>
+                <img src="img/flora.png" alt="" class="imagem_icones_pequenos" />
+              </figure>
+            </td>
+          <tr>
+            <td> Diurna </td>
+            <td> Carnívora</td>
+            <td> Pantae </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="col-md-6">
+        <h2> Onde podemos localizar esta planta?</h2>
+        <figure>
+          <div class="image">
+            <p></p>
+            <img src="img/mapa.pmosca.jpg" alt="" class="map_pmosca" />
+          </div>
+        </figure>
+        <p class="legenda"> Localização atual da espécie em estudo </p>
+        <p class="texto"> A Papa-Mosca é uma planta nativa do sudeste dos Estados Unidos, nomeadamente dos estados da
+          Carolina do Norte e do Sul.</p>
+
+      </div>
+    </div>
+
+  </div>
+  <!-- Detalhes End -->
+
+
+
+  <!-- Footer Start -->
   <div class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5">
       <div class="row g-5">
@@ -335,22 +295,21 @@
     </div>
   </div>
   <!-- Footer End -->
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
-      ><i class="bi bi-arrow-up"></i
-    ></a>
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-  </body>
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
 </html>
