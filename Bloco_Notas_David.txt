@@ -15,5 +15,8 @@ Remoção  da caixa da imagem do Leão na página do catálogo
 Alteração do título do container principal.Acréscimo de umm breve texto de introdução do nosso catálogo
 online e de um símbolo de informação.
 
+Criação de um flex container para organizar as imagens do catálogo de forma horizontal
+Adição de Legendas das imagens através de <fig caption> </fig caption> indicando o preço e nome do produto
+
 
 //Implementar no futuro: os nossos produtos,são cuidadosamente selecionados e produzidos por artesãos locais. 

@@ -430,7 +430,6 @@
     /*font size variable for window*/
     font-size: 2.5rem;
     line-height: 1.2;
-
 }
 
 .vertical-adjustment-1 {
@@ -598,7 +597,9 @@
     color: var(--primary);
 }
 
+
 /*** novas regras ou regras sobrepostas ***/
+
 
 /* sergio globais */
 
@@ -607,13 +608,16 @@
 }
 
 H5 {
-    color:crimson;
+    color: crimson;
 }
+
+
 /* sergio header */
 
 .navbar.sticky-top a h2 {
     font-size: 2.5rem;
 }
+
 
 /* sergio: navegação */
 
@@ -622,7 +626,8 @@ H5 {
     margin: 0;
 }
 
-.navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link.active {
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
     background-color: darkgreen;
     color: white;
 }
@@ -637,7 +642,8 @@ H5 {
     color: white;
 }
 
-.dropdown-item:hover, .dropdown-item:focus {
+.dropdown-item:hover,
+.dropdown-item:focus {
     color: #1e2125;
     background-color: rgb(167, 223, 167);
 }
@@ -678,11 +684,13 @@ H5 {
     background-size: cover;
 }
 
-/* sergio: testemunhos */ 
+
+/* sergio: testemunhos */
 
 .carousel-indicators [data-bs-target] {
     background-color: #287e4b;
 }
+
 
 /* sergio: footer */
 
