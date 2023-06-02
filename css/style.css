@@ -659,6 +659,12 @@ H5 {
     bottom: -30px;
 }
 
+/* sergio: visita guiada */
+
+.header-bg.contactos {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/contactos-header.jpg) center center no-repeat;
+    background-size: cover;
+}
 
 /* sergio: visita guiada */
 
