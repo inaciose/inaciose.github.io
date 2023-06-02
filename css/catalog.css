@@ -1,0 +1,17 @@
+.icon {
+    font-size: 15px;
+}
+
+.button-icon {
+    border-style: hidden;
+    background-color: white;
+}
+
+.button-icon:hover {
+    background-color: yellow;
+}
+
+.flexbox-item {
+    position: relative;
+    border: solid 1px black;
+}
