@@ -11,6 +11,8 @@ No container-xxl:
 - As imagens tem o mesmo tempo de fade-in
 - O botão "Special Pricing" for alterado para "Reserve a Sua Tour!" e adicionado o link para a página de reservas
 - Usei a classe "fa-users" para o ícone do número de pessoas
+- A altura das imagens ocupa 100% do div
+- Os butões "Conheç a ...!" tem a sua posição ajustada para o fundo do div para que todos os butões fiquem alinhados
 !!POR FAZER!!
 - Alterei o texto descritivo para tours e adicionei o link para a página de apresentação de tours
 

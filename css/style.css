@@ -406,15 +406,15 @@
 }
 
 
-/*** Tours ***/
+/*** Trilhos ***/
 
-.tours-item {
+.trilhos-item {
     padding: 45px 30px;
     color: #ffffff;
     background: rgba(0, 0, 0, .7);
 }
 
-.tours-item img {
+.trilhos-item img {
     position: absolute;
     top: 0;
     left: 0;
@@ -424,9 +424,13 @@
     z-index: -1;
 }
 
-.tours-item .display-1 {
+.trilhos-item .display-1 {
     color: transparent;
     -webkit-text-stroke: 2px var(--primary);
+    /*font size variable for window*/
+    font-size: 2.5rem;
+    line-height: 1.2;
+
 }
 
 .vertical-adjustment-1 {
