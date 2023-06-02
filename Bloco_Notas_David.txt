@@ -1,0 +1,19 @@
+29/5/2023
+Criação da página catalogo.html.
+Adição de Imagens.
+Alteração de conteúdo de texto da pageheader e o fundo do pageheader(alterado no ficheiro css)
+
+
+2/6/2023
+Remoção  da caixa da imagem do Leão na página do catálogo
+    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+      <div class="img-border">
+      <img class="img-fluid" src="img/about.jpg" alt="" />
+    </div>
+
+
+Alteração do título do container principal.Adição de umm breve texto de introdução do nosso catálogo
+online.
+
+
+//Implementar no futuro: os nossos produtos,são cuidadosamente selecionados e produzidos por artesãos locais. 
