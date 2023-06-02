@@ -38,6 +38,37 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <!-- sergio added css styles for responsive google maps-->
+    <style>
+      .map-responsive{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+      }
+      .map-responsive iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+      }
+
+      .color-crimson {
+        color: crimson;
+      }
+      
+      .hover-border {
+        border: 2px solid #F3F4F5;
+      }
+      
+      .hover-border:hover {
+        border: 2px solid #2EB872;
+      }
+
+
+    </style>
   </head>
 
   <body>
@@ -163,7 +194,7 @@
       <div class="container">
         <div class="row g-4 mb-5">
           <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="h-100 bg-light d-flex align-items-center p-5">
+            <div class="h-100 bg-light d-flex align-items-center p-5 hover-border">
               <div class="btn-lg-square bg-white flex-shrink-0">
                 <i class="fa fa-map-marker-alt text-primary"></i>
               </div>
@@ -176,7 +207,7 @@
             </div>
           </div>
           <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="h-100 bg-light d-flex align-items-center p-5">
+            <div class="h-100 bg-light d-flex align-items-center p-5 hover-border">
               <div class="btn-lg-square bg-white flex-shrink-0">
                 <i class="fa fa-phone-alt text-primary"></i>
               </div>
@@ -184,12 +215,12 @@
                 <p class="mb-2">
                   <span class="text-primary me-2">#</span>Telefone
                 </p>
-                <h5 class="mb-0">+55 234 234 234</h5>
+                <h5 class="mb-0"><a href="tel:+55234234234" class="color-crimson">+55 234 234 234</a></h5>
               </div>
             </div>
           </div>
           <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="h-100 bg-light d-flex align-items-center p-5">
+            <div class="h-100 bg-light d-flex align-items-center p-5 hover-border">
               <div class="btn-lg-square bg-white flex-shrink-0">
                 <i class="fa fa-envelope-open text-primary"></i>
               </div>
@@ -197,78 +228,115 @@
                 <p class="mb-2">
                   <span class="text-primary me-2">#</span>e-mail
                 </p>
-                <h5 class="mb-0">info@riafary.com</h5>
+                <h5 class="mb-0"><a href="mailto:info@riafary.com" class="color-crimson">info@riafary.com</a></h5>
               </div>
             </div>
           </div>
         </div>
         <div class="row g-5">
+          <!-- sergio tabbed content start-->
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-            <p><span class="text-primary me-2">#</span>Contacte-nos</p>
-            <h1 class="display-5 mb-4">Se tem alguma questão ou alguma duvida contacte-nos!</h1>
-            <p class="mb-4">
-              O formulário de contacto é um mero exemplo teria de ter um script para enviar os dados por email.
-            </p>
-            <form>
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control bg-light border-0"
-                      id="name"
-                      placeholder="Your Name"
-                    />
-                    <label for="name">Nome</label>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-floating">
-                    <input
-                      type="email"
-                      class="form-control bg-light border-0"
-                      id="email"
-                      placeholder="Your Email"
-                    />
-                    <label for="email">Endereço de email<e-mail></e-mail></label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control bg-light border-0"
-                      id="subject"
-                      placeholder="Subject"
-                    />
-                    <label for="subject">Assunto</label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-floating">
-                    <textarea
-                      class="form-control bg-light border-0"
-                      placeholder="Leave a message here"
-                      id="message"
-                      style="height: 100px"
-                    ></textarea>
-                    <label for="message">Mensagem</label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <button class="btn btn-primary w-100 py-3" type="submit">
-                    Enviar Mensagem
-                  </button>
-                </div>
+
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#vista">Vista aéra</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#transportes">Transportes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#formulario">Formulário</a>
+              </li>
+            </ul>
+            <!-- Conteudo das Abas -->
+            <div class="tab-content">
+              <div id="vista" class="container tab-pane active"><br>
+                <h3>Paisagem maravilhosa</h3>
+                <p>
+                  <img src="img/vista-aerea.jpg" alt="Vista aerea" class="img-fluid">
+                </p>
               </div>
-            </form>
+              <div id="transportes" class="container tab-pane fade"><br>
+                <h3>Transportes</h3>
+                <p>Pode <i>chegar</i> ao <u>riaFary</u> de <b>carro</b>, ou usando <b>autocarro da carreira 25</b>. Também temos transfers especiais de helicoptero.</p>
+                <p>
+                  <img src="img/autocarro.jpeg" alt="autocarro" class="img-fluid">
+                </p>
+              </div>
+              <div id="formulario" class="container tab-pane fade"><br>
+                <h3>Formulário</h3>
+                <p>
+                  <p><span class="text-primary me-2">#</span>Contacte-nos</p>
+                  <h6 class="display-5 mb-4" style="font-size: 1em;">Se tem alguma questão ou alguma duvida contacte-nos!</h6>
+                  <p class="mb-4">
+                    O formulário de contacto é um mero exemplo teria de ter um script para enviar os dados por email.
+                  </p>
+                  <form>
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <div class="form-floating">
+                          <input
+                            type="text"
+                            class="form-control bg-light border-0"
+                            id="name"
+                            placeholder="Your Name"
+                          />
+                          <label for="name">Nome</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-floating">
+                          <input
+                            type="email"
+                            class="form-control bg-light border-0"
+                            id="email"
+                            placeholder="Your Email"
+                          />
+                          <label for="email">Endereço de email<e-mail></e-mail></label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input
+                            type="text"
+                            class="form-control bg-light border-0"
+                            id="subject"
+                            placeholder="Subject"
+                          />
+                          <label for="subject">Assunto</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <textarea
+                            class="form-control bg-light border-0"
+                            placeholder="Leave a message here"
+                            id="message"
+                            style="height: 100px"
+                          ></textarea>
+                          <label for="message">Mensagem</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button class="btn btn-primary w-100 py-3" type="submit">
+                          Enviar Mensagem
+                        </button>
+                      </div>
+                    </div>
+                  </form>                  
+                </p>
+              </div>
+            </div>
           </div>
+          <!-- tabbed content end -->
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="h-100" style="min-height: 400px">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1070.558046091697!2d-59.80823633743839!3d-3.0268520549800706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926ea732cc7ed861%3A0xb28a7bd182e5b946!2sBASE%20DE%20INSTRU%C3%87%C3%83O%20CEL%20JORGE%20TEIXEIRA%20-%20BI%204%2C%20CIGS!5e1!3m2!1spt-PT!2spt!4v1685726106046!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- google maps responsive -->
+            <div class="map-responsive h-100">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1184.5262270343744!2d-59.810342666631385!3d-3.0259496773985837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zM8KwMDEnMzMuNyJTIDU5wrA0OCczNC43Ilc!5e0!3m2!1sen!2spt!4v1685734167705!5m2!1sen!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
+        
       </div>
     </div>
     <!-- Contact End -->
