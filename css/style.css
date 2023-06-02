@@ -440,6 +440,43 @@
     transform: translateY(100%);
 }
 
+/*** Trilhos Descrições ***/
+/*** Usado em selva.html; pantano.html; rio.html ***/
+.trilhos-descricao {
+    padding: 45px 30px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, .7);
+}
+.trilhos-descricao img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.trilhos-descricao .display-1 {
+    color: transparent;
+    -webkit-text-stroke: 2px var(--primary);
+    /*font size variable for window*/
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+.vertical-adjustment-1 {
+    margin: 0;
+    position: relative;
+    top: 100%;
+    transform: translateY(100%);
+}
+.trilhos-mapa {
+    /*Ajuste para o mapa embebido*/
+    width: 650px;
+    height: 450px;
+    padding: 45px 30px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, .7);
+}
 
 /*** Testimonial ***/
 
