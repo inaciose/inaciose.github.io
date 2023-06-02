@@ -12,8 +12,8 @@ Remoção  da caixa da imagem do Leão na página do catálogo
     </div>
 
 
-Alteração do título do container principal.Adição de umm breve texto de introdução do nosso catálogo
-online.
+Alteração do título do container principal.Acréscimo de umm breve texto de introdução do nosso catálogo
+online e de um símbolo de informação.
 
 
 //Implementar no futuro: os nossos produtos,são cuidadosamente selecionados e produzidos por artesãos locais. 
