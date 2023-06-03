@@ -11,30 +11,7 @@
     background-color: yellow;
 }
 
-.popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
-
-.popup-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.popup-link {
-    color: blue;
-}
-
-.close {
-    color: red;
-    text-decoration: none;
-    float: right;
+.flexbox-item {
+    position: relative;
+    border: solid 1px black;
 }
