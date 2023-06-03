@@ -159,19 +159,19 @@
     <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
       <div class="navbar-nav ms-auto">
         <a href="index.html" class="nav-item nav-link active">Home</a>
-        <a href="about.html" class="nav-item nav-link">Catálogo</a>
+        <a href="catalogo.html" class="nav-item nav-link">Catálogo</a>
 
         <div class="nav-item dropdown">
           <a href="trilhos.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Trilhos</a>
           <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-            <a href="trilho1.html" class="dropdown-item">Trilho 1</a>
-            <a href="trilho2.html" class="dropdown-item">Trilho 2</a>
-            <a href="trilho3.html" class="dropdown-item">Trilho 3</a>
+            <a href="pantano.html" class="dropdown-item">Pantano</a>
+            <a href="selva.html" class="dropdown-item">Selva</a>
+            <a href="rio.html" class="dropdown-item">Rio</a>
           </div>
         </div>
 
         <div class="nav-item dropdown">
-          <a href="especies.html" class="nav-link dropdown-toggle" data-hover="dropdown">Espécies</a>
+          <a href="especies.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Espécies</a>
           <div class="dropdown-menu rounded-0 rounded-bottom m-0">
             <a href="onca.html" class="dropdown-item">Onça pintada</a>
             <a href="ariranha.html" class="dropdown-item">Ariranha</a>
@@ -181,13 +181,12 @@
             <a href="pmosca.html" class="dropdown-item">Papa-mosca</a>
           </div>
         </div>
-        <a href="visitas-guiadas.html" class="nav-item nav-link">Visitas guiadas</a>
-        <a href="galeria.html" class="nav-item nav-link">Galeria de imagens</a>
+        <a href="visitas_guiadas.html" class="nav-item nav-link">Visitas guiadas</a>
         <a href="sobre.html" class="nav-item nav-link">Sobre</a>
 
         <a href="contactos.html" class="nav-item nav-link" style="margin-right: 20px;">Contactos</a>
       </div>
-      <a href="" class="btn btn-primary">Marcações<i class="fa fa-arrow-right ms-3"></i></a>
+      <a href="visitas_guiadas.html#marcacao" class="btn btn-primary">Marcações<i class="fa fa-arrow-right ms-3"></i></a>
     </div>
   </nav>
   <!-- Navbar End -->
@@ -233,9 +232,14 @@
           </h2>
           <div class="d-flex align-items-center pt-4 animated slideInDown">
             <a href="" class="btn btn-primary py-sm-3 px-3 px-sm-5 me-5">Saber mais</a>
-            <button type="button" class="btn-play" data-bs-toggle="modal" data-bs-target="#videoModal">
-              <span></span>
-            </button>
+            <button
+            type="button"
+            class="btn-play"
+            data-bs-toggle="modal"
+            data-src="https://www.youtube.com/embed/Uq9PGtpYYRQ"
+            data-bs-target="#videoModal">
+            <span></span>
+          </button>
             <h6 class="text-white m-0 ms-4 d-none d-sm-block">Ver Video</h6>
           </div>
         </div>
@@ -300,21 +304,18 @@
     <div class="row">
       <div class="col-md-4 d-none d-sm-block text-center">
         <img class="img-fluid mb-3" src="img/icon/icon-2.png" alt="Icon" />
-        <h5 class="mb-3">Car Parking</h5>
-        <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-          sed diam stet diam sed stet.</span>
+        <h5 class="mb-3">Estacionamento</h5>
+        <span>Para sua comodidade e segurança, temos um spaço de estacionamento gratuito, coberto e vigiado.</span>
       </div>
       <div class="col-md-4 col-xs-12 text-center">
         <img class="img-fluid mb-3" src="img/icon/icon-3.png" alt="Icon" />
-        <h5 class="mb-3">Animal Photos</h5>
-        <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-          sed diam stet diam sed stet.</span>
+        <h5 class="mb-3">Fotos permitidas</h5>
+        <span>No nosso parque pode tirar fotos todos os belos animais e plantas que encontrar na sua visita.</span>
       </div>
       <div class="col-md-4 d-none d-sm-block text-center">
         <img class="img-fluid mb-3" src="img/icon/icon-5.png" alt="Icon" />
-        <h5 class="mb-3">Food & Beverages</h5>
-        <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-          sed diam stet diam sed stet.</span>
+        <h5 class="mb-3">Restaurante</h5>
+        <span>Existe um restaruante e uma cafetaria para que possa tomar a sua refeição no nosso parque.</span>
       </div>
     </div>
   </div>
@@ -324,20 +325,25 @@
   <div class="container-fluid bg-primary facts my-5 py-5" data-wow-delay="0.1s">
     <div class="container py-5">
       <div class="row g-4">
-        <div class="col-md-6 col-lg-4 text-center wow fadeIn" data-wow-delay="0.1s">
+        <div class="col-md-3 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
           <i class="fa fa-paw fa-3x text-primary mb-3"></i>
-          <h3 class="text-white mb-2" data-toggle="counter-up">12345</h3>
+          <h3 class="text-white mb-2" data-toggle="counter-up">143</h3>
           <p class="text-white mb-0">Espécies de animais</p>
         </div>
-        <div class="col-md-6 col-lg-4 text-center wow fadeIn" data-wow-delay="0.3s">
+        <div class="col-md-3 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
           <i class="fa fa-users fa-3x text-primary mb-3"></i>
           <h3 class="text-white mb-2" data-toggle="counter-up">98887</h3>
           <p class="text-white mb-0">Visitantes</p>
         </div>
-        <div class="col-md-6 col-lg-4 text-center wow fadeIn" data-wow-delay="0.7s">
+        <div class="col-md-3 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
           <i class="fa fa-shield-alt fa-3x text-primary mb-3"></i>
           <h3 class="text-white mb-2" data-toggle="counter-up">586</h3>
           <p class="text-white mb-0">Animais salvos</p>
+        </div>
+        <div class="col-md-3 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+          <i class="fa fa-leaf fa-3x text-primary mb-3"></i>
+          <h3 class="text-white mb-2" data-toggle="counter-up">1435</h3>
+          <p class="text-white mb-0">Espécies de plantas</p>
         </div>
       </div>
     </div>
@@ -362,47 +368,38 @@
           <div class="testimonial-item text-center carousel-item active" data-bs-interval="20000">
             <div class="container">
               <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 d-none d-sm-block">
                   <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="img/testimonial-1.jpg"
                     style="width: 100px; height: 100px" alt="foto1" />
                   <div class="testimonial-text rounded text-center p-4">
                     <p>
-                      Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                      duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                      clita erat magna elitr erat sit sit erat at rebum justo sea
-                      clita.
+                      O riaFary é um santuário da natureza, onde a flora exala sua beleza e as aves cantam sua melodia. Suas trilhas serpenteiam por entre árvores majestosas, revelando lagos cristalinos e montanhas imponentes. Um refúgio encantador onde a alma feminina se conecta com a essência selvagem da Mãe Terra.
                     </p>
-                    <h5 class="mb-1">Patient Name</h5>
-                    <span class="fst-italic">Profession</span>
+                    <h5 class="mb-1">Joaquina silva</h5>
+                    <span class="fst-italic">Professora</span>
                   </div>
 
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4  col-xs-12 ">
                   <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="img/testimonial-2.jpg"
                     style="width: 100px; height: 100px" alt="foto2" />
                   <div class="testimonial-text rounded text-center p-4">
                     <p>
-                      Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                      duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                      clita erat magna elitr erat sit sit erat at rebum justo sea
-                      clita.
+                      No coração do Parque Natural, a natureza se desdobra em um espetáculo de cores e fragrâncias. As flores dançam ao vento, enquanto borboletas exibem suas asas delicadas. Os rios cristalinos abraçam o cenário, convidando banhar-nos na sua energia revitalizante.
                     </p>
-                    <h5 class="mb-1">Patient Name</h5>
-                    <span class="fst-italic">Profession</span>
+                    <h5 class="mb-1">Rui Sousa</h5>
+                    <span class="fst-italic">Dentista</span>
                   </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 d-none d-sm-block">
                   <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="img/testimonial-3.jpg"
                     style="width: 100px; height: 100px" alt="foto3" />
                   <div class="testimonial-text rounded text-center p-4">
                     <p>
-                      Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                      duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                      clita erat magna elitr erat sit sit erat at rebum justo sea
-                      clita.
+                      CO parque natural RiaFary é um tesouro escondido. Suas paisagens deslumbrantes são adornadas por extensos manguezais, onde a vida marinha floresce. Caminhar por suas trilhas é ser abraçada pela harmonia da natureza. Uma experiência única e inspiradora que não vou esquecer.
                     </p>
-                    <h5 class="mb-1">Patient Name</h5>
-                    <span class="fst-italic">Profession</span>
+                    <h5 class="mb-1">Julio Dinis</h5>
+                    <span class="fst-italic">Carteiro</span>
                   </div>
                 </div>
               </div>
@@ -411,46 +408,37 @@
           <div class="testimonial-item text-center carousel-item" data-bs-interval="20000">
             <div class="container">
               <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 d-none d-sm-block">
                   <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="img/testimonial-4.jpg"
                     style="width: 100px; height: 100px" alt="foto4" />
                   <div class="testimonial-text rounded text-center p-4">
                     <p>
-                      Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                      duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                      clita erat magna elitr erat sit sit erat at rebum justo sea
-                      clita.
+                      RiaFary, o parque natural dos sonhos, encanta com suas águas serenas e praias intocadas. As dunas douradas convidam as mulheres a caminhar, sentindo a energia do sol acariciar suas peles. Uma jornada mágica pela natureza, onde a alma se renova e se conecta com a essência selvagem.
                     </p>
-                    <h5 class="mb-1">Patient Name</h5>
-                    <span class="fst-italic">Profession</span>
+                    <h5 class="mb-1">Pedro Jorge</h5>
+                    <span class="fst-italic">Escreitor</span>
                   </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-xs-12">
                   <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="img/testimonial-5.jpg"
                     style="width: 100px; height: 100px" alt="foto5" />
                   <div class="testimonial-text rounded text-center p-4">
                     <p>
-                      Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                      duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                      clita erat magna elitr erat sit sit erat at rebum justo sea
-                      clita.
+                      O Parque Natural RiaFary é um santuário de vida selvagem, onde a natureza se revela em sua plenitude. Suas trilhas sinuosas levam a vistas deslumbrantes, repletas de aves exóticas e vegetação exuberante. Um refúgio de paz e inspiração para as mulheres que buscam reconexão com a natureza.
                     </p>
-                    <h5 class="mb-1">Patient Name</h5>
-                    <span class="fst-italic">Profession</span>
+                    <h5 class="mb-1">Pedro Carmo</h5>
+                    <span class="fst-italic">Policia</span>
                   </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 d-none d-sm-block">
                   <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="img/testimonial-6.jpg"
                     style="width: 100px; height: 100px" alt="foto6" />
                   <div class="testimonial-text rounded text-center p-4">
                     <p>
-                      Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                      duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                      clita erat magna elitr erat sit sit erat at rebum justo sea
-                      clita.
+                      O Parque Natural RiaFary é um destino imperdível para quem ama a natureza. Com trilhas bem sinalizadas, oferece uma experiência incrível de contato com a fauna e flora local. Suas paisagens deslumbrantes proporcionam momentos de tranquilidade e contemplação em meio à natureza intocada.
                     </p>
-                    <h5 class="mb-1">Patient Name</h5>
-                    <span class="fst-italic">Profession</span>
+                    <h5 class="mb-1">Sofia Pereira</h5>
+                    <span class="fst-italic">Médica</span>
                   </div>
                 </div>
               </div>
@@ -459,46 +447,37 @@
           <div class="testimonial-item text-center carousel-item" data-bs-interval="20000">
             <div class="container">
               <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 d-none d-sm-block">
                   <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="img/testimonial-7.jpg"
                     style="width: 100px; height: 100px" alt="foto7" />
                   <div class="testimonial-text rounded text-center p-4">
                     <p>
-                      Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                      duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                      clita erat magna elitr erat sit sit erat at rebum justo sea
-                      clita.
+                      O Parque Natural RiaFary é um lugar incrível para os amantes da natureza. Com uma variedade impressionante de fauna e flora, oferece oportunidades únicas de observação de animais e paisagens deslumbrantes. Suas trilhas bem conservadas garantem aventuras emocionantes e momentos de relaxamento em meio à natureza exuberante.
                     </p>
-                    <h5 class="mb-1">Patient Name</h5>
-                    <span class="fst-italic">Profession</span>
+                    <h5 class="mb-1">Manuel Dias</h5>
+                    <span class="fst-italic">Médico</span>
                   </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-xs-12">
                   <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="img/testimonial-8.jpg"
                     style="width: 100px; height: 100px" alt="foto8" />
                   <div class="testimonial-text rounded text-center p-4">
                     <p>
-                      Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                      duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                      clita erat magna elitr erat sit sit erat at rebum justo sea
-                      clita.
+                      O Parque Natural RiaFary é um verdadeiro paraíso natural. Com sua diversidade de ecossistemas e belas paisagens, proporciona uma experiência inesquecível para os visitantes. Através de suas trilhas bem cuidadas, é possível explorar a rica fauna e flora, desfrutando de momentos de paz e conexão com a natureza.
                     </p>
-                    <h5 class="mb-1">Patient Name</h5>
-                    <span class="fst-italic">Profession</span>
+                    <h5 class="mb-1">Daniela Ruas</h5>
+                    <span class="fst-italic">Esteticista</span>
                   </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 d-none d-sm-block">
                   <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="img/testimonial-9.jpg"
                     style="width: 100px; height: 100px" alt="foto9" />
                   <div class="testimonial-text rounded text-center p-4">
                     <p>
-                      Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                      duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                      clita erat magna elitr erat sit sit erat at rebum justo sea
-                      clita.
+                      O Parque Natural RiaFary é um lugar deslumbrante para os amantes da natureza. Com sua ampla extensão de áreas preservadas, oferece um refúgio tranquilo longe da agitação da cidade. Suas trilhas bem mantidas convidam os visitantes a explorar as belezas naturais, enquanto desfrutam da serenidade e da vida selvagem abundante.
                     </p>
-                    <h5 class="mb-1">Patient Name</h5>
-                    <span class="fst-italic">Profession</span>
+                    <h5 class="mb-1">Rui Rocha</h5>
+                    <span class="fst-italic">Futebolista</span>
                   </div>
                 </div>
               </div>
