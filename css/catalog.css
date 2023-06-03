@@ -11,7 +11,19 @@
     background-color: yellow;
 }
 
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
 .flexbox-item {
-    position: relative;
-    border: solid 1px black;
+    border-style: none;
+    margin: 2%;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.flexbox-item:hover {
+    transform: scale(1.2);
+    z-index: 2;
 }

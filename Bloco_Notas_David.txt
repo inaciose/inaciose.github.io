@@ -20,3 +20,8 @@ Adição de Legendas das imagens através de <fig caption> </fig caption> indica
 
 
 //Implementar no futuro: os nossos produtos,são cuidadosamente selecionados e produzidos por artesãos locais. 
+
+
+3/6/2023
+Implementação de  animações nas imagens do flex container, quando utilizador passa com cursor nelas(hover), para indicar lhe que pode clicar nelas
+Acréscimo das páginas html de cada imagem
