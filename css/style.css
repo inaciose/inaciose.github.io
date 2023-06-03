@@ -638,7 +638,7 @@
 /*** novas regras ou regras sobrepostas ***/
 
 
-/* sergio globais */
+/* globais */
 
 .text-green {
     color: #a1eea1;
@@ -649,14 +649,14 @@ H5 {
 }
 
 
-/* sergio header */
+/* header */
 
 .navbar.sticky-top a h2 {
     font-size: 2.5rem;
 }
 
 
-/* sergio: navegação */
+/* navegação cabecalho */
 
 .navbar .navbar-nav .nav-link {
     padding: 25px 15px;
@@ -686,7 +686,7 @@ H5 {
 }
 
 
-/* sergio: home page */
+/* home page */
 
 .header-bg.home-start {
     background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .1)), url(../img/ria-flamingos-lg.jpg) center center no-repeat;
@@ -702,14 +702,20 @@ H5 {
     bottom: -30px;
 }
 
-/* sergio: visita guiada */
+/* home page testemunhos */
+
+.carousel-indicators [data-bs-target] {
+    background-color: #287e4b;
+}
+
+/* contactos */
 
 .header-bg.contactos {
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/contactos-header.jpg) center center no-repeat;
     background-size: cover;
 }
 
-/* sergio: visita guiada */
+/* visita guiada */
 
 .header-bg.visita-guiada {
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/Moliceiro-Aveiro-Memorias-Ria-min.png) center center no-repeat;
@@ -721,15 +727,17 @@ H5 {
     background-size: cover;
 }
 
+/* sobre */
 
-/* sergio: testemunhos */
-
-.carousel-indicators [data-bs-target] {
-    background-color: #287e4b;
+.header-bg.sobre {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/recepcao-riafary.jpeg) center center no-repeat;
+    background-size: cover;
 }
 
 
-/* sergio: footer */
+
+
+/* footer */
 
 .footer {
     background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .7)), url(../img/ria-flamingos.jpg) center center no-repeat;

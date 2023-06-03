@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Visitas Guiadas</title>
+  <title>Visitas Guiadas e reservas - riaFary</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <meta content="natureza, safari, visitas guiadas" name="keywords" />
   <meta content="Conheça as nossas visitas guiadas e marque a sua vista por telefone ou email" name="description" />
@@ -32,6 +32,41 @@
 
   <!-- Template Stylesheet -->
   <link href="css/style.css" rel="stylesheet" />
+
+  <style type="text/css">
+    .video-responsive{
+      overflow:hidden;
+      padding-bottom:56.25%;
+      position:relative;
+      height:0;
+    }
+    .video-responsive iframe{
+      left:0;
+      top:0;
+      height:100%;
+      width:100%;
+      position:absolute;
+    }
+
+    @media screen and (max-width: 769px) {
+      FIGURE {
+        margin-top: 20px;
+      }
+    }
+
+    table td,
+    table th {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    tbody td {
+      font-weight: 500;
+      color: #999999;
+    }
+
+  </style>
+
 </head>
 
 <body>
@@ -39,7 +74,7 @@
   <div id="spinner"
     class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
     <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
-      <span class="sr-only">Loading...</span>
+      <span class="sr-only">Carregando...</span>
     </div>
   </div>
   <!-- Spinner End -->
@@ -50,23 +85,27 @@
       <div class="col-lg-7 px-5 text-start">
         <div class="h-100 d-inline-flex align-items-center py-3 me-4">
           <small class="fa fa-map-marker-alt text-primary me-2"></small>
-          <small>123 Street, New York, USA</small>
+          <small>Canal do moliço, Manaus, Brasil</small>
         </div>
         <div class="h-100 d-inline-flex align-items-center py-3">
           <small class="far fa-clock text-primary me-2"></small>
-          <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
+          <small>Seg - Dom : 09.00 - 18.00</small>
         </div>
       </div>
       <div class="col-lg-5 px-5 text-end">
         <div class="h-100 d-inline-flex align-items-center py-3 me-4">
           <small class="fa fa-phone-alt text-primary me-2"></small>
-          <small>+012 345 6789</small>
+          <small>+55 234 234 234</small>
         </div>
         <div class="h-100 d-inline-flex align-items-center">
-          <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
-          <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
-          <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
-          <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-sm-square bg-white text-primary me-1" target="_blank" href="https://facebook.com/"><i
+              class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-sm-square bg-white text-primary me-1" target="_blank" href="https://twitter.com/"><i
+              class="fab fa-twitter"></i></a>
+          <a class="btn btn-sm-square bg-white text-primary me-1" target="_blank" href="https://linkedin.com/"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a class="btn btn-sm-square bg-white text-primary me-0" target="_blank" href="https://instagram.com/"><i
+              class="fab fa-instagram"></i></a>
         </div>
       </div>
     </div>
@@ -85,60 +124,72 @@
     </button>
     <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
       <div class="navbar-nav ms-auto">
-        <a href="index.html" class="nav-item nav-link active">Home</a>
-        <a href="about.html" class="nav-item nav-link">Catálogo</a>
+        <a href="index.html" class="nav-item nav-link">Home</a>
+        <a href="catalogo.html" class="nav-item nav-link">Catálogo</a>
 
         <div class="nav-item dropdown">
           <a href="trilhos.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Trilhos</a>
           <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-            <a href="trilho1.html" class="dropdown-item">Trilho 1</a>
-            <a href="trilho2.html" class="dropdown-item">Trilho 2</a>
-            <a href="trilho3.html" class="dropdown-item">Trilho 3</a>
+            <a href="pantano.html" class="dropdown-item">Pantano</a>
+            <a href="selva.html" class="dropdown-item">Selva</a>
+            <a href="rio.html" class="dropdown-item">Rio</a>
           </div>
         </div>
 
         <div class="nav-item dropdown">
           <a href="especies.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Espécies</a>
           <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-            <a href="especie1.html" class="dropdown-item">Onça pintada</a>
-            <a href="especie2.html" class="dropdown-item">Ariranha</a>
-            <a href="especie3.html" class="dropdown-item">Galo-da-serra</a>
-            <a href="especie4.html" class="dropdown-item">Tucano</a>
-            <a href="especie5.html" class="dropdown-item">Vitória-régia</a>
-            <a href="especie6.html" class="dropdown-item">Papa-mosca</a>
+            <a href="onca.html" class="dropdown-item">Onça pintada</a>
+            <a href="ariranha.html" class="dropdown-item">Ariranha</a>
+            <a href="galo.html" class="dropdown-item">Galo-da-serra</a>
+            <a href="tucano.html" class="dropdown-item">Tucano</a>
+            <a href="v_regia.html" class="dropdown-item">Vitória-régia</a>
+            <a href="pmosca.html" class="dropdown-item">Papa-mosca</a>
           </div>
         </div>
-        <a href="visitas-guiadas.html" class="nav-item nav-link">Visitas guiadas</a>
-        <a href="galeria.html" class="nav-item nav-link">Galeria de imagens</a>
+        <a href="visitas_guiadas.html" class="nav-item nav-link active">Visitas guiadas</a>
         <a href="sobre.html" class="nav-item nav-link">Sobre</a>
 
         <a href="contactos.html" class="nav-item nav-link" style="margin-right: 20px;">Contactos</a>
       </div>
-      <a href="" class="btn btn-primary">Marcações<i class="fa fa-arrow-right ms-3"></i></a>
+      <a href="visitas_guiadas.html#marcacao" class="btn btn-primary">Marcações<i class="fa fa-arrow-right ms-3"></i></a>
     </div>
   </nav>
   <!-- Navbar End -->
 
-
   <!-- Page Header Start -->
   <div class="container-fluid header-bg visita-guiada py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5">
-      <h1 id="marcacao" class="display-4 text-white mb-3 animated slideInDown">
-        Visitas guiadas
+      <h1 class="display-4 text-white mb-3 animated slideInDown">
+        Visitas guiadas e Reservas
       </h1>
       <nav aria-label="breadcrumb animated slideInDown">
         <ol class="breadcrumb mb-0">
           <li class="breadcrumb-item">
-            <a class="text-white" href="index.html">Home</a>
+            <a class="text-white" href="/index.html">Home</a>
           </li>
           <li class="breadcrumb-item text-primary active" aria-current="page">
-            Visitas guiadas
+            Visitas guiadas e Reservas
           </li>
         </ol>
       </nav>
     </div>
   </div>
   <!-- Page Header End -->
+
+  <!-- Apresentação das visitas guiadas start -->
+  <div class="container-lg my-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <h2>Descubra as Maravilhas da Amazônia em Visitas Guiadas a Trilhos Incríveis</h2>
+    <p>A <strong>Amazônia é um tesouro de biodiversidade</strong>, e não há melhor maneira de <em>explorar essa exuberante floresta</em> do que participando de <ins>visitas guiadas a vários trilhos</ins>. Essas excursões oferecem uma experiência única, permitindo que os visitantes se maravilhem com a abundância de espécies incríveis que habitam a região. Durante essas visitas, você terá a oportunidade de conhecer de perto algumas das criaturas mais emblemáticas da Amazônia, como a onça pintada, a ariranha, a vitória-régia, o tucano e o papa-moscas, <del>e dinosauros</del>.</p>
+    <div class="row my-5 py-3"><div class="col-md-6 text-center"> <div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/Qo2oU_6bYaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div><div class="col-md-6 text-center"><figure><img class="img-fluid" src="img/guias-riafary.jpg" alt="Guias do riaFary" title="Guias do riaFary" /><figcaption>Guias do riaFary</figcaption></figure></div></div>
+    <h3 id="marcacao">Vantagens das visitas guiadas</h3>
+    <p>Uma das grandes <b>vantagens das visitas guiadas</b> é a <i>qualidade dos guias especializados</i> que acompanham os visitantes em suas jornadas. Esses <u>profissionais são altamente competentes</u> e possuem amplo conhecimento sobre a flora e fauna da Amazônia, tornando-se verdadeiros especialistas na região. Eles compartilham informações valiosas sobre as espécies encontradas ao longo dos trilhos, revelando curiosidades e detalhes fascinantes. Além disso, os guias estão cientes das melhores áreas para avistar animais específicos, maximizando suas chances de ter encontros emocionantes com a vida selvagem.</p>
+    <p>Ao participar de uma visita guiada, você poderá desfrutar ao máximo dos trilhos da Amazônia. Os guias conhecem as rotas mais interessantes e seguras, permitindo que os visitantes aproveitem a natureza em sua plenitude. Eles levam em consideração a capacidade física dos participantes e adaptam o ritmo da caminhada para garantir uma experiência agradável para todos. Além disso, os guias são treinados para fornecer informações importantes sobre medidas de segurança e conselhos práticos para uma exploração consciente e responsável da floresta.</p>
+    <hr style="margin: 40px 0" />
+    <h3>Vantagens de fazer reserva</h3>
+    <p>Ao planear uma visita guiada à Amazônia, é fundamental fazer reserva ou marcação antecipada. A procura por essas experiências é alta, e garantir seu lugar com antecedência é essencial para evitar decepções. As visitas guiadas são frequentemente limitadas em número de participantes para preservar o ambiente natural e minimizar o impacto sobre as espécies locais. Ao fazer uma reserva, você garante que haverá espaço para você e que a experiência será exclusiva e autêntica. <s>Saidas de hora a hora.</s></p>
+  </div>
+  <!-- Apresentação das visitas guiadas end -->
 
   <!-- Visiting Hours Start -->
   <div class="container-fluid bg-primary visiting-hours my-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -169,16 +220,17 @@
             </li>
             <li class="list-group-item">
               <span>Sabado</span>
-              <span style="display: inline-block;">9:00, 10:00, 11:00<br /> 14:00, 15:00, 16:00</span>
+              <span style="display: inline-block;">09:00, 10:00, 11:00<br /> 14:00, 15:00, 16:00</span>
             </li>
             <li class="list-group-item">
               <span class="text-green">Domingo</span>
-              <span class="text-green" style="display: inline-block;">9:00, 10:00, 11:00<br /> 14:00, 15:00, 16:00</span>
+              <span class="text-green" style="display: inline-block;">09:00, 10:00, 11:00<br /> 14:00, 15:00, 16:00</span>
             </li>
           </ul>
         </div>
         <div class="col-md-6 text-light wow fadeIn" data-wow-delay="0.5s">
-          <h2 class="display-6 text-white mb-5">Marcações</h2>
+          <h2 class="display-6 text-white mb-5">Reservas ou Marcações</h2>
+          <p>Existem visitas com horario pré definido, mas podem ser marcadas visitas especiais para grupos e outras condições. <b>Ver preços mais abaixo.</b></p>
           <table class="table">
             <tbody>
               <tr>
@@ -211,6 +263,68 @@
   </div>
   <!-- Visiting Hours End -->
 
+  <!-- Apresentação da comunidade aveirense start -->
+  <div class="container-lg my-1 py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <h2>Comunidade de aveirenses emigrados na Amazónia</h2>
+    <p>Na exuberante Amazônia, uma comunidade de aveirenses emigrados encontrou um novo lar longe de suas terras natais. Eles levaram consigo não apenas sua cultura e tradições, mas também uma habilidade singular que se tornou uma parte valiosa da vida na região - os braços moliceiros.</p>
+    <p>Os braços moliceiros, outrora usados nos canais salgados de Aveiro para a colheita de algas, agora deslizam suavemente sobre as águas amazônicas, ajudando a sustentar essa comunidade de emigrantes e a fortalecer sua identidade cultural.</p>
+  </div>
+  <!-- Apresentação da comunidade aveirense end -->
+
+  <!-- preçário start -->
+  <div class="container-md my-1 py-2 wow fadeInUp" data-wow-delay="0.1s">
+    <h2 class="text-center" style="margin-bottom: 1em;">Preçário</h2>
+    <div class="gradient-custom-1 h-100">
+      <div class="mask d-flex align-items-center h-100">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="table-responsive bg-white">
+                <table class="table table-sm mb-0">
+                  <caption>O preçário pode ser alterado a qualquer momento.</caption>
+                  <thead>
+                    <tr>
+                      <th>Tipo de visita</th>
+                      <th>Trilho</th>
+                      <th>Preço</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th rowspan="3" class="align-middle" style="color: #2EB872;">Programada</th>
+                      <td>Trilho Pantano</td>
+                      <td>150 €</td>
+                    </tr>
+                    <tr>
+                      <td>Trilho Selva</td>
+                      <td>100 €</td>
+                    </tr>
+                    <tr>
+                      <td>Trilho rio</td>
+                      <td>150 €</td>
+                    </tr>
+                      <th rowspan="3" class="align-middle" style="color: #da7676;">Especial</th>
+                      <td>Trilho Pantano</td>
+                      <td>600 €</td>
+                    </tr>
+                    <tr>
+                      <td>Trilho Selva</td>
+                      <td>500 €</td>
+                    </tr>
+                    <tr>
+                      <td>Trilho rio</td>
+                      <td>600 €</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- preçário end -->
 
   <!-- Footer Start -->
   <div class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
