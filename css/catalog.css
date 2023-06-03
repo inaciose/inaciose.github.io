@@ -1,29 +1,4 @@
-.icon {
-    font-size: 15px;
-}
-
-.button-icon {
-    border-style: hidden;
-    background-color: white;
-}
-
-.button-icon:hover {
-    background-color: yellow;
-}
-
-.flex {
-    display: flex;
-    justify-content: center;
-}
-
-.flexbox-item {
-    border-style: none;
-    margin: 2%;
-    overflow: hidden;
-    transition: 1s;
-}
-
-.flexbox-item:hover {
+.flexbox :hover {
     transform: scale(1.2);
     z-index: 2;
 }
