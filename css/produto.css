@@ -1,0 +1,38 @@
+.produto_container {
+    display: flex;
+    justify-content: start;
+}
+
+.produto {
+    display: flex;
+}
+
+.imagem {
+    flex-basis: 47%;
+    transform: scale(1.08);
+}
+
+.imagem img {
+    display: block;
+    border: 1px solid black;
+}
+
+.detalhes {
+    flex-basis: 53%;
+    padding: 20px;
+    padding-left: 60px;
+    border: 1px solid black;
+}
+
+table {
+    border: solid;
+}
+
+table td {
+    font-size: 20px;
+}
+
+table th {
+    font-size: 25px;
+    font-weight: bolder;
+}
