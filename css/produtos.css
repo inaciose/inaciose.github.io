@@ -16,7 +16,7 @@
 table {
     border: 1px solid black;
     border-collapse: collapse;
-    width: auto;
+    width: 70%;
 }
 
 table td {
