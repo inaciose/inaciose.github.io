@@ -44,6 +44,18 @@
       background: linear-gradient(rgba(0, 0, 0, 0.208), rgba(0, 0, 0, .7)), url(../img/grupoarii.jpg) center center no-repeat;
       background-size: cover;
     }
+
+    @media screen and (max-width:767px) {
+      .mapa_parte {
+        margin-top: 100px;
+      }
+
+      @media screen and (max-width: 500px) {
+        .map {
+          width: 90%;
+        }
+      }
+    }
   </style>
 </head>
 
@@ -160,8 +172,9 @@
   <!-- Detalhes do Animal -->
   <div class="detalhes">
     <div class="row ">
-      <div class="col-md-6 align-self-center whole">
+      <div class="col-md-6 whole">
         <h2> Características </h2>
+        <br>
 
         <p class="texto"> A Ariranha destaca-se pelo seu corpo longo coberto por uma <strong>pelagem densa e por uma
             mancha
@@ -169,6 +182,8 @@
         <p class="texto"> Geralmente, é uma espécie sociável que gosta de viver em grupos de 2 a 15 indivíduos.</p>
         <p class="texto"> A Ariranha habita em ambientes de água doce, e em locais com vegetação mais densa, de forma a
           construirem as suas tocas.</p>
+        <p class="texto">Atualmente, está classificada como espécie em perigo de extinção, uma vez que a sua pele é
+          extremamente valiosa.</p>
 
         <table class="table-table-borderless tabela">
           <tr>
@@ -179,17 +194,18 @@
           <tr>
             <td class="table_icones">
               <figure>
-                <img src="img/sol.png" alt="" class="imagem_icones_grandes" />
+                <img src="img/sol.png" alt="Infelizmente não conseguimos carregar a imagem." class="imagem_icones" />
               </figure>
             </td>
             <td class="table_icones">
               <figure>
-                <img src="img/carne.png" alt="" class="imagem_icones_pequenos" />
+                <img src="img/carne.png" alt="Infelizmente não conseguimos carregar a imagem." class="imagem_icones" />
               </figure>
             </td>
             <td class="table_icones">
               <figure>
-                <img src="img/mamíferos.png" alt="" class="imagem_icones_pequenos" />
+                <img src="img/mamíferos.png" alt="Infelizmente não conseguimos carregar a imagem."
+                  class="imagem_icones" />
               </figure>
             </td>
           <tr>
@@ -200,12 +216,12 @@
         </table>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6 mapa_parte">
         <h2> Onde podemos localizar esta espécie?</h2>
         <figure>
           <div class="image">
             <p></p>
-            <img src="img/mapa-ariranha.png" alt="" class="map" />
+            <img src="img/mapa-ariranha.png" alt="Infelizmente não conseguimos carregar a imagem." class="map" />
           </div>
         </figure>
         <p class="legenda"> Localização atual da espécie em estudo </p>

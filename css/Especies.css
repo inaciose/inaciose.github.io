@@ -48,17 +48,11 @@ td {
     text-align: center;
 }
 
-.imagem_icones_pequenos {
-    width: 100px;
+.imagem_icones {
+    width: 80px;
 }
 
-.imagem_icones_grandes {
-    width: 150px;
-}
 
-.map {
-    width: 365px;
-}
 
 #ua {
     height: 30px
@@ -75,4 +69,12 @@ td {
 .main-banner.caption {
     position: relative top 20%;
     transform: translateY(-70%)
+}
+
+
+
+@media screen and (min-width: 992px) {
+    .map {
+        width: 365px;
+    }
 }

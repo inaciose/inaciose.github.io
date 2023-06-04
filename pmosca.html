@@ -46,8 +46,10 @@
       background-size: cover;
     }
 
-    .map_pmosca {
-      width: 700px;
+    @media screen and (max-width:767px) {
+      .mapa_parte {
+        margin-top: 50px;
+      }
     }
   </style>
 </head>
@@ -166,13 +168,16 @@
   <!-- Detalhes do Animal -->
   <div class="detalhes">
     <div class="row">
-      <div class="col-md-6 align-self-center whole">
+      <div class="col-md-6 whole">
         <h2> Características </h2>
+        <br>
 
         <p class="texto"> A Papa-mosca é <strong>uma das poucas espécies de plantas </strong>, capaz de realizar
           movimento.</p>
         <p class="texto"> Pode ter no máximo 10 centímetros de altura e é composta por folhas muitos particulares, que
           contêm um pecíolo e uma armadilha,que serve como "dentes".</p>
+        <p class="texto">Na armadilha, existem néctar e pêlos sensoriais, de forma a detetar a presença de insetos e
+          digeri-los numa fração de segundos.</p>
         <p class="texto"> Curiosamente,a Papa-Mosca no inverno entra num período de dormência, e se nessa altura fôr
           colocada num ambiente mais fresco, a sua longevidade pode ser maior.</p>
 
@@ -185,17 +190,17 @@
           <tr>
             <td class="table_icones">
               <figure>
-                <img src="img/sol.png" alt="" class="imagem_icones_grandes" />
+                <img src="img/sol.png" alt="Infelizmente não conseguimos carregar a imagem." class="imagem_icones" />
               </figure>
             </td>
             <td class="table_icones">
               <figure>
-                <img src="img/carne.png" alt="" class="imagem_icones_pequenos" />
+                <img src="img/carne.png" alt="Infelizmente não conseguimos carregar a imagem." class="imagem_icones" />
               </figure>
             </td>
             <td class="table_icones">
               <figure>
-                <img src="img/flora.png" alt="" class="imagem_icones_pequenos" />
+                <img src="img/flora.png" alt="Infelizmente não conseguimos carregar a imagem." class="imagem_icones" />
               </figure>
             </td>
           <tr>
@@ -206,12 +211,13 @@
         </table>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6 mapa_parte">
         <h2> Onde podemos localizar esta planta?</h2>
         <figure>
           <div class="image">
             <p></p>
-            <img src="img/mapa.pmosca.jpg" alt="" class="map_pmosca" />
+            <img src="img/mapa.pmosca.jpg" alt="Infelizmente não conseguimos carregar a imagem."
+              class="map_pmosca img-fluid" />
           </div>
         </figure>
         <p class="legenda"> Localização atual da espécie em estudo </p>

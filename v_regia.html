@@ -46,8 +46,22 @@
       background-size: cover;
     }
 
-    .map_vregia {
-      width: 500px;
+    @media screen and (min-width: 992px) {
+      .map_vregia {
+        width: 500px;
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      .map_vregia {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width:767px) {
+      .mapa_parte {
+        margin-top: 100px;
+      }
     }
   </style>
 </head>
@@ -165,16 +179,19 @@
   <!-- Detalhes do Animal -->
   <div class="detalhes">
     <div class="row">
-      <div class="col-md-6 align-self-center whole">
+      <div class="col-md-6 whole">
         <h2> Características </h2>
+        <br>
 
         <p class="texto"> A Vitória-Régia é uma planta <strong>exclusivamente aquática </strong>, e pode atingir até 2,5
           metros de diâmetro.</p>
         <p class="texto"> Geralmente, destaca-se por ter canais de escoamento, que juntamente com duas fendas laterais,
           encaminham a água das chuvas para o lago.</p>
+        <p class="texto">Para além disso, possui um reservatório energético rico em amido, sais minerais e ferro, que
+          pode também ser considerado o seu próprio alimento.</p>
         <p class="texto"> Curiosamente, a sua sobrevivência é bastante dependente de inundações, pois à medida que a
-          água
-          sobe, a planta cresce.</p>
+          água sobe, a planta cresce.</p>
+
 
         <table class="table-table-borderless tabela">
           <tr>
@@ -185,17 +202,18 @@
           <tr>
             <td class="table_icones">
               <figure>
-                <img src="img/sol.png" alt="" class="imagem_icones_grandes" />
+                <img src="img/sol.png" alt="Infelizmente não conseguimos carregar a imagem." class="imagem_icones" />
               </figure>
             </td>
             <td class="table_icones">
               <figure>
-                <img src="img/flora.png" alt="" class="imagem_icones_pequenos" />
+                <img src="img/flora.png" alt="Infelizmente não conseguimos carregar a imagem." class="imagem_icones" />
               </figure>
             </td>
             <td class="table_icones">
               <figure>
-                <img src="img/angiosperma.png" alt="" class="imagem_icones_pequenos" />
+                <img src="img/angiosperma.png" alt="Infelizmente não conseguimos carregar a imagem."
+                  class="imagem_icones" />
               </figure>
             </td>
           <tr>
@@ -206,12 +224,12 @@
         </table>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6 mapa_parte">
         <h2> Onde podemos localizar esta planta?</h2>
         <figure>
           <div class="image">
             <p></p>
-            <img src="img/mapa.vit.png" alt="" class="map_vregia" />
+            <img src="img/mapa.vit.png" alt="Infelizmente não conseguimos carregar a imagem." class="map_vregia" />
           </div>
         </figure>
         <p class="legenda"> Localização atual da espécie em estudo </p>

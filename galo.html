@@ -44,6 +44,12 @@
       background: linear-gradient(rgba(0, 0, 0, 0.208), rgba(0, 0, 0, .7)), url(../img/Galo.jpg) center center no-repeat;
       background-size: cover;
     }
+
+    @media screen and (max-width:767px) {
+      .mapa_parte {
+        margin-top: 100px;
+      }
+    }
   </style>
 </head>
 
@@ -161,17 +167,20 @@
   <!-- Detalhes do Animal -->
   <div class="detalhes">
     <div class="row">
-      <div class="col-md-6 align-self-center whole">
+      <div class="col-md-6 whole">
         <h2> Características </h2>
-
+        <br>
         <p class="texto"> O Galo-da-Serra é considerado <strong>uma das aves mais bonitas do Brasil </strong>, e pode
           medir
           até 28 centímetros.</p>
         <p class="texto"> Geralmente, o macho apresenta uma cor laranja e o seu topete pode servir como um leque,
           chegando
           até cobrir o bico.</p>
+        <p class="texto">Existem mais de 60 espécies deste tipo de ave e têm características extremamente diferentes em
+          termos de tamanho, cor, forma e comportamento.</p>
         <p class="texto"> O Galo-da-Serra faz o seu próprio ninho, gosta de viver sozinho e costuma habitar em zonas
           montanhosas.</p>
+
 
         <table class="table-table-borderless tabela">
           <tr>
@@ -182,17 +191,17 @@
           <tr>
             <td class="table_icones">
               <figure>
-                <img src="img/sol.png" alt="" class="imagem_icones_grandes" />
+                <img src="img/sol.png" alt="Infelizmente não conseguimos carregar a imagem." class="imagem_icones" />
               </figure>
             </td>
             <td class="table_icones">
               <figure>
-                <img src="img/frutos.png" alt="" class="imagem_icones_grandes" />
+                <img src="img/frutos.png" alt="Infelizmente não conseguimos carregar a imagem." class="imagem_icones" />
               </figure>
             </td>
             <td class="table_icones">
               <figure>
-                <img src="img/aves.png" alt="" class="imagem_icones_grandes" />
+                <img src="img/aves.png" alt="Infelizmente não conseguimos carregar a imagem." class="imagem_icones" />
               </figure>
             </td>
           <tr>
@@ -203,12 +212,12 @@
         </table>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6 mapa_parte">
         <h2> Onde podemos localizar esta espécie?</h2>
         <figure>
           <div class="image">
             <p></p>
-            <img src="img/mapa.galo.png" alt="" class="map" />
+            <img src="img/mapa.galo.png" alt="Infelizmente não conseguimos carregar a imagem." class="map" />
           </div>
         </figure>
         <p class="legenda"> Localização atual da espécie em estudo </p>

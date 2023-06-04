@@ -44,6 +44,12 @@
       background: linear-gradient(rgba(0, 0, 0, 0.208), rgba(0, 0, 0, .7)), url(../img/whole.onça1.jpg) center center no-repeat;
       background-size: cover;
     }
+
+    @media screen and (max-width:767px) {
+      .mapa_parte {
+        margin-top: 50px;
+      }
+    }
   </style>
 </head>
 
@@ -115,7 +121,7 @@
         </div>
 
         <div class="nav-item dropdown">
-          <a href="especies.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Espécies</a>
+          <a href="especies.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"> Espécies</a>
           <div class="dropdown-menu rounded-0 rounded-bottom m-0">
             <a href="onca.html" class="dropdown-item active">Onça pintada</a>
             <a href="ariranha.html" class="dropdown-item">Ariranha</a>
@@ -162,15 +168,16 @@
   <!-- Detalhes do Animal -->
   <div class="detalhes">
     <div class="row">
-      <div class="col-md-6 align-self-center whole">
+      <div class="col-md-6 whole">
         <h2> Características </h2>
-
+        <br>
         <p class="texto"> A Onça-Pintada é considerada o <strong>maior felino das Américas </strong>, podendo o seu
           comprimento variar de 1,10 a 2,10 metros e o seu peso atingir os 135 kg.</p>
-        <p class="texto"> Geralmente, destaca-se pela sua pelagem amarela com presença de manchas pretas e um ventre
-          esbranquiçado.</p>
         <p class="texto"> Uma vez que esta espécie se destaca como excelente nadadora, podemos encontra-la em habitats
           próximos de rios e de cursos de água.</p>
+        <p class="texto"> Geralmente, destaca-se pela sua pelagem amarela com presença de manchas pretas e um ventre
+          esbranquiçado.</p>
+
 
         <table class="table-table-borderless tabela">
           <tr>
@@ -181,17 +188,18 @@
           <tr>
             <td class="table_icones">
               <figure>
-                <img src="img/lua.png" alt="" class="imagem_icones_pequenos" />
+                <img src="img/lua.png" alt="Infelizmente não conseguimos carregar a imagem." class="imagem_icones" />
               </figure>
             </td>
             <td class="table_icones">
               <figure>
-                <img src="img/carne.png" alt="" class="imagem_icones_pequenos" />
+                <img src="img/carne.png" alt="Infelizmente não conseguimos carregar a imagem." class="imagem_icones" />
               </figure>
             </td>
             <td class="table_icones">
               <figure>
-                <img src="img/mamíferos.png" alt="" class="imagem_icones_pequenos" />
+                <img src="img/mamíferos.png" alt="Infelizmente não conseguimos carregar a imagem."
+                  class="imagem_icones" />
               </figure>
             </td>
           <tr>
@@ -202,12 +210,12 @@
         </table>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6 mapa_parte">
         <h2> Onde podemos localizar esta espécie?</h2>
         <figure>
           <div class="image">
             <p></p>
-            <img src="img/mapa.onça.png" alt="" class="map" />
+            <img src="img/mapa.onça.png" alt="Infelizmente não conseguimos carregar a imagem." class="map" />
           </div>
         </figure>
         <p class="legenda"> Localização atual da espécie em estudo </p>
