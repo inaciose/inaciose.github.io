@@ -3,10 +3,6 @@
     justify-content: start;
 }
 
-.produto {
-    display: flex;
-}
-
 .detalhes {
     flex-basis: 53%;
     padding: 20px;
@@ -16,7 +12,6 @@
 table {
     border: 1px solid black;
     border-collapse: collapse;
-    width: 70%;
 }
 
 table td {
