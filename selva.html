@@ -50,72 +50,13 @@
   <!-- Template Scripts -->
   <script src="js/main.js"></script>
 
-  <!-- xsi added: in document style sample -->
   <style>
-    #bg-video {
-      min-width: 100%;
-      min-height: 100vh;
-      max-width: 100%;
-      max-height: 100vh;
-      object-fit: cover;
-      z-index: -1;
-    }
-
-    .main-banner .caption {
-      padding: 30px;
-      border-radius: 20px;
-      background-color: rgba(7, 9, 10, 0.75);
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-
-    .main-banner .caption h6 {
-      margin-top: 0px;
-      font-family: 'Poppins', sans-serif;
-      font-size: 15px;
-      text-transform: uppercase;
-      font-weight: 600;
-      color: #fff;
-      letter-spacing: 1px;
-    }
-
-    .main-banner .caption h2 {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      font-family: "Quicksand", sans-serif;
-      font-size: 36px;
-      text-transform: uppercase;
-      font-weight: 800;
-      color: #fff;
-      letter-spacing: 1px;
-    }
-
-    .main-banner .caption p {
-      color: #fff;
-      font-size: 14px;
-      max-width: 570px;
-    }
-
-    .main-button-red a {
-      font-size: 13px;
-      color: #fff;
-      background-color: #087219;
-      padding: 12px 30px;
-      display: inline-block;
-      border-radius: 22px;
-      font-weight: 500;
-      text-transform: uppercase;
-      transition: all .3s;
-    }
-
     .map-responsive {
       overflow: hidden;
       padding-bottom: 56.25%;
       position: relative;
       height: 0;
     }
-
     .map-responsive iframe {
       left: 0;
       top: 0;
@@ -123,18 +64,25 @@
       width: 100%;
       position: absolute;
     }
-
-    @media screen and (max-width: 480px) {
-      .main-banner .caption {
-        margin: 0 20px;
-      }
-
+    .carousel-control-prev-icon {
+      background-image: url("img/arrow-left.png");
+    }
+    .carousel-control-next-icon {
+      background-image: url("img/arrow-right.png");
     }
 
     @media screen and (min-width: 767px) {
       .img-fluid {
         margin-left: 10px;
+        margin-top: 0px !important;
       }
+    }
+    .container-fluid {
+      padding: 0 1.5rem 0;
+    }
+    /*header background*/
+    .header-bg {
+      background-image: url("img/jungle-bg.jpg");
     }
   </style>
 </head>
@@ -228,8 +176,6 @@
   </nav>
   <!-- Navbar End -->
 
-
-
   <!-- Header Start -->
   <div class="container-fluid header-bg py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5">
@@ -251,26 +197,57 @@
       </nav>
     </div>
   </div>
-  <!-- Header End --> 
+  <!-- Header End -->
+
   <!-- Trilho Selva Info Start -->
-  <div class="container col-md-12">
+  <div class="container-fluid">
     <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-      <div class="col-md-6 p-4 d-flex flex-column position-static">
+      <div class="col-md-5 p-3 d-flex flex-column position-static">
         <h2 class="mb-0 text-primary">Trilho Selva</h2>
         <div class="mb-1 text-secondary">Manaus, Brasil</div>
-        <p class="card-text mb-auto">O trilho selva é um trilho que se encontra na selva amazónica, onde se pode
-          observar a fauna e flora da região.</p>
+        <p class="card-text mb-auto">
+          Neste trilho poderá observar a fauna e flora da selva amazónica,
+          onde poderá encontrar animais como a onça pintada, a ariranha, o galo-da-serra, o tucano, entre outros.
+        </p>
         <br>
         <!-- Reservation button -->
-        <a href="reserva.html" class="btn btn-primary">Reservar</a>
+        <a href="visitas_guiadas.html" class="btn btn-primary"
+          style="max-width: 100px; align-self: flex-start";>
+          Reservar
+        </a>
       </div>
-      <div class="col-md-6 d-flex flex-column position-static">
-        
+      <div class="col-md-7 p-3 d-flex flex-column position-static">
+        <!-- Information about the trail -->
+
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card mb-4 shadow-sm">
+              <img  src="img/barraca-da-selva.jpg" class="card-img-fluid"
+                    alt="Infelizmente não conseguimos carregar a imagem.">
+              <div class="card-body">
+                <p class="card-text">
+                  Poderá pernoitar na selva, em barracas,
+                  onde poderá observar a fauna e flora noturna.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-4 shadow-sm">
+              <img  src="img/souvenir.jpg" class="card-img-fluid"
+                    alt="Infelizmente não conseguimos carregar a imagem.">
+              <div class="card-body">
+                <p class="card-text">
+                  Poderá adquirir souvenirs na nossa loja, como por exemplo,
+                  t-shirts, canecas, entre outros.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
-
   <!-- Trilho Selva Info End -->
 
   <!-- Trilho Selva Details Start -->
@@ -283,32 +260,42 @@
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="col-md-6 d-flex flex-column position-static text-center">
-        <div class="row justify-content-center"><img class="img-fluid" src="img/selva-altitude.jpg"></div>
+        <div class="row justify-content-center"><img class="img-fluid"
+          src="img/selva-altitude.jpg" style="margin-top: 10px;">
+        </div>
         <div class="row justify-content-center" style="margin-top: 30px;">
           <div id="especies_encontra" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div>
-                  <img src="img/about.jpg" class="rounded-circle img-fluid" width="140px" height="140px"
+                  <img src="img/onca_c.jpeg" class="rounded-circle img-fluid"
+                    width="140px" height="140px"
                     alt="Infelizmente não conseguimos carregar a imagem.">
-
-                  <h2>Animal 1</h2>
+                  <h2>Onça pintada</h2>
                 </div>
               </div>
               <div class="carousel-item">
                 <div>
-                  <img src="img/about.jpg" class="rounded-circle img-fluid" width="140px" height="140px"
+                  <img src="img/ariranha-c.jpg" class="rounded-circle img-fluid"
+                    width="140px" height="140px"
                     alt="Infelizmente não conseguimos carregar a imagem.">
-
-                  <h2>Animal 2</h2>
+                  <h2>Ariranha</h2>
                 </div>
               </div>
               <div class="carousel-item">
                 <div>
-                  <img src="img/about.jpg" class="rounded-circle img-fluid" width="140px" height="140px"
+                  <img src="img/Galo-c.jpg" class="rounded-circle img-fluid"
+                    width="140px" height="140px"
                     alt="Infelizmente não conseguimos carregar a imagem.">
-
-                  <h2>Animal 3</h2>
+                  <h2>Galo da serra</h2>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div>
+                  <img src="img/tucano-c.jpg" class="rounded-circle img-fluid"
+                    width="140px" height="140px"
+                    alt="Infelizmente não conseguimos carregar a imagem.">
+                  <h2>Tucano</h2>
                 </div>
               </div>
             </div>
@@ -327,65 +314,7 @@
       </div>
     </div>
   </div>
-
-
   <!-- Trilho Selva Details End -->
-
-  <!-- Trilho Selva Start -->
-  <div class="container col-md-10">
-    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-      <div class="col-md-6 map-responsive">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m30!1m12!1m3!1d11462.734385629708!2d-59.81064196944032!3d-3.028277127514629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m15!3e2!4m5!1s0x926ea732cc7ed861%3A0xb28a7bd182e5b946!2sBASE%20DE%20INSTRU%C3%87%C3%83O%20CEL%20JORGE%20TEIXEIRA%20-%20BI%204%2C%20CIGS%2C%20Manaus%20-%20AM%2C%20Brazil!3m2!1d-3.0270029999999997!2d-59.8082372!4m3!3m2!1d-2.9833756!2d-59.8099754!4m3!3m2!1d-2.9569107999999997!2d-59.79685!5e1!3m2!1sen!2spt!4v1685741468248!5m2!1sen!2spt"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <div class="col-md-6 d-flex flex-column position-static text-center">
-        <div class="row justify-content-center"><img class="img-fluid" src="img/selva-altitude.jpg"></div>
-        <div class="row justify-content-center" style="margin-top: 30px;">
-          <div id="especies_encontra" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div>
-                  <img src="img/about.jpg" class="rounded-circle img-fluid" width="140px" height="140px"
-                    alt="Infelizmente não conseguimos carregar a imagem.">
-
-                  <h2>Animal 1</h2>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div>
-                  <img src="img/about.jpg" class="rounded-circle img-fluid" width="140px" height="140px"
-                    alt="Infelizmente não conseguimos carregar a imagem.">
-
-                  <h2>Animal 2</h2>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div>
-                  <img src="img/about.jpg" class="rounded-circle img-fluid" width="140px" height="140px"
-                    alt="Infelizmente não conseguimos carregar a imagem.">
-
-                  <h2>Animal 3</h2>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#especies_encontra"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#especies_encontra"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Trilho Selva End -->
 
   <!-- Footer Start -->
   <div class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">

@@ -24,4 +24,5 @@ Adição de Legendas das imagens através de <fig caption> </fig caption> indica
 
 3/6/2023
 Implementação de  animações nas imagens do flex container, quando utilizador passa com cursor nelas(hover), para indicar lhe que pode clicar nelas
-Acréscimo das páginas html de cada imagem
+Acréscimo das páginas html de cada produto
+Em cada pagina do produto foi implementao um container que contém uma imagem(com uma label a indicar o preço) e uma tabela com os detalhes do produto
