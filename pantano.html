@@ -58,7 +58,6 @@
       position: relative;
       height: 0;
     }
-
     .map-responsive iframe {
       left: 0;
       top: 0;
@@ -66,17 +65,17 @@
       width: 100%;
       position: absolute;
     }
-
-    @media screen and (max-width: 480px) {
-      .main-banner .caption {
-        margin: 0 20px;
-      }
-
+    .carousel-control-prev-icon {
+      background-image: url("img/arrow-left.png");
+    }
+    .carousel-control-next-icon {
+      background-image: url("img/arrow-right.png");
     }
 
     @media screen and (min-width: 767px) {
       .img-fluid {
         margin-left: 10px;
+        margin-top: 0px !important;
       }
     }
     .container-fluid {
@@ -211,7 +210,7 @@
         <h2 class="mb-0 text-primary">Trilho Pântano</h2>
         <div class="mb-1 text-secondary">Manaus, Brasil</div>
         <p class="card-text mb-auto">
-          O trilho Pântano é um trilho de 3 dias e 2 noites, onde poderá
+          O <strong>Trilho Pântano</strong> é um trilho de 3 dias e 2 noites, onde poderá
           observar a fauna e flora da região, bem como, pernoitar na selva.
         </p>
         <br>
@@ -253,9 +252,9 @@
       </div>
     </div>
   </div>
-  <!-- Trilho Selva Info End -->
+  <!-- Trilho Pântano Info End -->
 
-  <!-- Trilho Selva Details Start -->
+  <!-- Trilho Pântano Details Start -->
   <div class="container col-md-12">
     <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
       <div class="col-md-6 map-responsive">
@@ -266,10 +265,10 @@
       </div>
       <div class="col-md-6 d-flex flex-column position-static text-center">
         <div class="row justify-content-center"><img class="img-fluid"
-          src="img/selva-altitude.jpg" style="margin-top: 10px"
+          src="img/selva-altitude.jpg" style="margin-top: 5px"
           alt="Infelizmente não conseguimos carregar a imagem.">
         </div>
-        <div class="row justify-content-center" style="margin-top: 30px">
+        <div class="row justify-content-center" style="margin-top: 10px">
           <div id="especies_encontra" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -320,7 +319,7 @@
       </div>
     </div>
   </div>
-  <!-- Trilho Selva Details End -->
+  <!-- Trilho Pântano Details End -->
 
   <!-- Footer Start -->
   <div class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
