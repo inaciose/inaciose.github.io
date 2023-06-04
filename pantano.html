@@ -71,11 +71,19 @@
     .carousel-control-next-icon {
       background-image: url("img/arrow-right.png");
     }
-
     @media screen and (min-width: 767px) {
       .img-fluid {
         margin-left: 10px;
         margin-top: 0px !important;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      .info {
+        max-width: 90%;
+      }
+      .details {
+        max-width: 80%;
       }
     }
     .container-fluid {
@@ -210,8 +218,11 @@
         <h2 class="mb-0 text-primary">Trilho Pântano</h2>
         <div class="mb-1 text-secondary">Manaus, Brasil</div>
         <p class="card-text mb-auto">
-          O <strong>Trilho Pântano</strong> é um trilho de 3 dias e 2 noites, onde poderá
+          O <strong>Trilho Pântano</strong> é um trilho onde poderá
           observar a fauna e flora da região, bem como, pernoitar na selva.
+          <br>O cheiro a metano é característico deste trilho.
+          <br>
+          <small class="text-muted">Duração: 3 dias</small>
         </p>
         <br>
         <!-- Reservation button -->
@@ -273,36 +284,27 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div>
-                  <img src="img/onca_c.jpeg" class="rounded-circle img-fluid"
+                  <img src="img/regia-c.jpg" class="rounded-circle img-fluid"
                     width="140" height="140"
                     alt="Infelizmente não conseguimos carregar a imagem.">
-                  <h2>Onça pintada</h2>
+                  <h2>Vitória-régia</h2>
                 </div>
               </div>
               <div class="carousel-item">
                 <div>
-                  <img src="img/ariranha-c.jpg" class="rounded-circle img-fluid"
+                  <img src="img/jacare-c.jpeg" class="rounded-circle img-fluid"
                     width="140" height="140"
                     alt="Infelizmente não conseguimos carregar a imagem.">
-                  <h2>Ariranha</h2>
+                  <h2>Jacaré</h2>
                 </div>
               </div>
               <div class="carousel-item">
                 <div>
-                  <img src="img/Galo-c.jpg" class="rounded-circle img-fluid"
+                  <img src="img/piranha-c.jpeg" class="rounded-circle img-fluid"
                     width="140" height="140"
                     alt="Infelizmente não conseguimos carregar a imagem.">
-                  <h2>Galo da serra</h2>
+                  <h2>Piranha</h2>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div>
-                  <img src="img/tucano-c.jpg" class="rounded-circle img-fluid"
-                    width="140" height="140"
-                    alt="Infelizmente não conseguimos carregar a imagem.">
-                  <h2>Tucano</h2>
-                </div>
-              </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#especies_encontra"
               data-bs-slide="prev">
@@ -314,6 +316,7 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
+            </div>
           </div>
         </div>
       </div>
