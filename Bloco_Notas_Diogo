@@ -19,3 +19,33 @@ No container-xxl:
 As alterações que fiz no ficheiro style.css foram:
 - Mudei o nome da classe "memberships-item" para "tours-item"
 - Adicionei a classe vertical-adjustment-1 para ajustar a posição do button "Reserve a Sua Tour!" para o posicionamento correto para todos os ecrãs
+
+
+!! Apresentação do projeto !!
+Realização das páginas trilhos.html, selva.html, rio.html, pantano.html
+
+Todas estas páginas têm o spiner, topbar, navbar, header e footer iguais.
+Cada um destes componentes é depois alterado para se adequar ao conteúdo da página.
+
+!! trilhos.html !!
+O elemento principal desta página está dentro do container-xxl
+Dentro deste temos 2 rows.
+A primeira row tem 2 colunas e serve para apresentar o título da página e o texto descritivo, bem como o botão "Reserve a Sua Tour!"
+A segunda row tem 3 colunas e serve para apresentar as imagens dos trilhos e os seus respetivos butões "Conheça o Trilho!"
+Nestas 3 colunas, as imagens têm a classe "img-fluid" para que se ajustem ao tamanho do div.
+É também usada a classe trilhos-item para ajustar várias propriedades dos elementos dentro do div.
+Usei a classe fa para os icons de pessoa e check mark.
+Os títulos dos trilhos estão dentro de um h1 e têm a classe display-1 da classe trihos-item, e aqui usei um webkit para que o texto ficasse com esta formatação.
+Cada butão tem um link para a página do trilho respetivo.
+
+!! selva pantano e rio.html !!
+Estas páginas são semelhantes entre si, sendo que a única diferença é o conteúdo.
+O principal desafio foi fazer com que o conteúdo se ajustasse ao tamanho do ecrã.
+Para isso, usei a container-fuid e img-fluid, juntamente com uns styles costumizados para que o conteúdo se ajustasse corretamente.
+
+Temos então 2 divs principais, um para as informações genéricas e outro para as imagens e mapas.
+Dentro da primeira div tem um breve texto descritivo e um botão para reservar a tour.
+De realçar:
+- text-primary para o título da página e o text-secondary para a localização.
+- a tag strong para realçar o nome da tour.
+- 

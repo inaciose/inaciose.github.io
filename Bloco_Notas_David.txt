@@ -30,3 +30,5 @@ Em cada pagina do produto foi implementao um container que contém uma imagem(co
 4/6/2023
 Remoção da secção facts do ficheiro original nas minhas páginas e remoção da secção testimonial tb nas minhas páginas exceto no catalogo.html onde foi implementado a secção testimonial do
 index.html.
+
+
