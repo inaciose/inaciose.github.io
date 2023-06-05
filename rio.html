@@ -55,7 +55,7 @@
       overflow: hidden;
       padding-bottom: 56.25%;
       position: relative;
-      height: 0;
+      height: 100%;
     }
     .map-responsive iframe {
       left: 0;
@@ -64,18 +64,40 @@
       width: 100%;
       position: absolute;
     }
-    .carousel-control-prev-icon {
-      background-image: url("img/arrow-left.png");
+    .details {
+      border-style: none;
     }
-    .carousel-control-next-icon {
-      background-image: url("img/arrow-right.png");
-    }
-
-    @media screen and (min-width: 767px) {
-      .img-fluid {
-        margin-left: 10px;
-        margin-top: 0px !important;
+    @media screen and (min-width: 972px) {
+      .info {
+        max-width: 80%;
       }
+      .details {
+        max-width: 70%;
+      }
+      .map-responsive {
+        max-height: 500px;
+      }
+      .widget {
+        padding-top: 10px;
+        height: 350px;
+      }
+    }
+    @media screen and (max-width: 972px) {
+      .info {
+        max-width: 90%;
+      }
+      .details {
+        max-width: 80%;
+      }
+      .map-responsive {
+        max-height: 1000px;
+      }
+      .widget {
+        padding-top: 10px;
+        height: 350px;
+      }
+    }
+    @media screen and (max-width: 767px) {
       .info {
         width: 100%;
         max-width: 1200px;
@@ -84,17 +106,17 @@
         width: 85%;
         max-width: 1100px;
       }
-    }
-
-    @media screen and (max-width: 767px) {
-      .info {
-        max-width: 90%;
-      }
-      .details {
-        max-width: 80%;
+      .widget {
+        padding-top: 10px;
+        height: 350px;
       }
     }
-    
+    .carousel-control-prev-icon {
+      background-image: url("img/arrow-left.png");
+    }
+    .carousel-control-next-icon {
+      background-image: url("img/arrow-right.png");
+    }
     .container-fluid {
       padding: 0 1.5rem 0;
     }
@@ -272,20 +294,18 @@
   <!-- Trilho Rio Info End -->
 
   <!-- Trilho Rio Details Start -->
-  <div class="container-fluid details">
+  <div class="container-fluid justify-content-center details wow fadeIn" data-wow-delay="0.1s">
     <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-      <div class="col-md-6 map-responsive">
+      <!-- Map -->
+      <div class="col-md-7 map-responsive">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d154198.391579979!2d-59.966592622289845!3d-3.200124569095159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c1bc8b37647b7%3A0x2b485c9ff765a9cc!2sManaus%2C%20State%20of%20Amazonas%2C%20Brazil!5e1!3m2!1sen!2spt!4v1685912168500!5m2!1sen!2spt"
           width="600" height="450" style="border:0" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <div class="col-md-6 d-flex flex-column position-static text-center" style="height: 320px">
-        <a class="weatherwidget-io" href="https://forecast7.com/pt/n3d12n60d02/manaus/" data-label_1="MANAUS" data-label_2="WEATHER" data-theme="original" >MANAUS WEATHER</a>
-        <script>
-        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-        </script>
-        <div class="row justify-content-center" style="margin-top: 10px">
+      <!-- Carousel -->
+      <div class="col-md-5 d-flex flex-column position-static text-center p-3 justify-content-around">
+        <div class="carousel">
           <div id="especies_encontra" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -321,6 +341,7 @@
                 </div>
               </div>
             </div>
+            <!-- Carousel controls -->
             <button class="carousel-control-prev" type="button" data-bs-target="#especies_encontra"
               data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -334,7 +355,41 @@
           </div>
         </div>
       </div>
+      <!-- Weather widget -->
+      <div class="tomorrow widget"
+        data-location-id="012939"
+        data-language="EN"
+        data-unit-system="METRIC"
+        data-skin="light"
+        data-widget-type="aqiPollen"
+        style="padding-bottom:22px;position:relative;"
+      >
+        <a
+          href="https://www.tomorrow.io/weather-api/"
+          rel="nofollow noopener noreferrer"
+          target="_blank"
+          style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
+        </a>
+      </div>
+      <script>
+        (function(d, s, id) {
+            if (d.getElementById(id)) {
+                if (window.__TOMORROW__) {
+                    window.__TOMORROW__.renderWidget();
+                }
+                return;
+            }
+            const fjs = d.getElementsByTagName(s)[0];
+            const js = d.createElement(s);
+            js.id = id;
+            js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+    
+            fjs.parentNode.insertBefore(js, fjs);
+        })(document, 'script', 'tomorrow-sdk');
+      </script>
+      
     </div>
+    
   </div>
   <!-- Trilho Rio Details End -->
   
